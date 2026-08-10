@@ -15,16 +15,3 @@ Uygulamayı hemen kullanmaya başlamak için tıklayın:
 * **Baskı (Print) Optimizasyonu:** Ekranda kullanıcı dostu bir form olarak görünürken, yazdırıldığında (`Ctrl+P` veya Yazdır butonu) tüm arayüz elementleri (butonlar, sekmeler, renkler) gizlenir. Yerini MEB standartlarına uygun, A4 boyutuna tam oturan resmi bir evrak alır.
 * **Veri Güdümlü Şablon (DRY Prensibi):** Dilekçe metinleri statik HTML yığını yerine, JavaScript tabanlı modüler bir mimariyle (`AYARLAR` ve `DILEKCELER` objeleri) oluşturulur.
 * **Kalıcı İndirme Özelliği:** Kullanıcılar formu doldurduktan sonra, girilen verilerle birlikte tek bir `.html` dosyası olarak bilgisayarlarına veya telefonlarına kaydedebilirler.
-
-
-## 🛠️ Yıllık Güncellemeler (İdareciler İçin)
-
-Yeni eğitim-öğretim yılı başladığında tüm formlardaki tarihleri tek tek aramak zorunda değilsiniz. Kodu herhangi bir metin editörü ile açıp, `<script>` etiketinin hemen altındaki `AYARLAR` bloğunu güncellemeniz tüm sistemin güncellenmesi için yeterlidir:
-
-```javascript
-const AYARLAR = {
-  okulAdi        : 'ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE',
-  tasinmaTarihi  : '1 Nisan 2026',
-  kuraDonemi     : '14-18 Eylül 2026',
-  hazirlayan     : 'Mehmet IŞIK'
-};
