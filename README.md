@@ -15,11 +15,19 @@ Uygulamayı hemen kullanmaya başlamak için tıklayın:
 * **Baskı (Print) Optimizasyonu:** Ekranda kullanıcı dostu bir form olarak görünürken, yazdırıldığında (`Ctrl+P` veya Yazdır butonu) tüm arayüz elementleri (butonlar, sekmeler, renkler) gizlenir. Yerini MEB standartlarına uygun, A4 boyutuna tam oturan resmi bir evrak alır.
 * **Veri Güdümlü Şablon (DRY Prensibi):** Dilekçe metinleri statik HTML yığını yerine, JavaScript tabanlı modüler bir mimariyle (`AYARLAR` ve `DILEKCELER` objeleri) oluşturulur.
 * **Kalıcı İndirme Özelliği:** Kullanıcılar formu doldurduktan sonra, girilen verilerle birlikte tek bir `.html` dosyası olarak bilgisayarlarına veya telefonlarına kaydedebilirler.
-```text
-💻 Teknolojiler
-HTML5
-CSS3 (CSS Variables, Flexbox, Print Media Queries)
-Vanilla JavaScript (ES6+)
 
-Mehmet IŞIK tarafından eğitim kurumlarının idari süreçlerini hızlandırmak amacıyla açık kaynak kodlu olarak geliştirilmiştir.
-```
+## ⚙️ Kurulum ve MEB Sitelerine Entegrasyon
+
+Herhangi bir sunucu kurulumuna gerek yoktur. `index.html` dosyasını tarayıcıda açmak yeterlidir. 
+
+**Okul Web Sitelerinde (meb.k12.tr) Kullanımı:**
+Güvenlik kısıtlamalarından dolayı bu kodu MEB paneline doğrudan metin olarak yapıştırmayın. Bunun yerine GitHub Pages linkini (yukarıdaki canlı önizleme linki) MEB sitenizin "Bağlantılar" veya "Duyurular" bölümüne dış link (URL) olarak ekleyebilirsiniz. Bu sayede iOS/iPhone cihazlardaki (QuickLook) JavaScript kısıtlamalarını da aşmış olursunuz.
+
+## 💻 Teknolojiler
+
+* HTML5
+* CSS3 (CSS Variables, Flexbox, Print Media Queries)
+* Vanilla JavaScript (ES6+)
+
+---
+*Mehmet IŞIK tarafından eğitim kurumlarının idari süreçlerini hızlandırmak amacıyla açık kaynak kodlu olarak geliştirilmiştir.*
