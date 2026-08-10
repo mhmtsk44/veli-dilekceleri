@@ -15,3 +15,11 @@ Uygulamayı hemen kullanmaya başlamak için tıklayın:
 * **Baskı (Print) Optimizasyonu:** Ekranda kullanıcı dostu bir form olarak görünürken, yazdırıldığında (`Ctrl+P` veya Yazdır butonu) tüm arayüz elementleri (butonlar, sekmeler, renkler) gizlenir. Yerini MEB standartlarına uygun, A4 boyutuna tam oturan resmi bir evrak alır.
 * **Veri Güdümlü Şablon (DRY Prensibi):** Dilekçe metinleri statik HTML yığını yerine, JavaScript tabanlı modüler bir mimariyle (`AYARLAR` ve `DILEKCELER` objeleri) oluşturulur.
 * **Kalıcı İndirme Özelliği:** Kullanıcılar formu doldurduktan sonra, girilen verilerle birlikte tek bir `.html` dosyası olarak bilgisayarlarına veya telefonlarına kaydedebilirler.
+```text
+💻 Teknolojiler
+HTML5
+CSS3 (CSS Variables, Flexbox, Print Media Queries)
+Vanilla JavaScript (ES6+)
+
+Mehmet IŞIK tarafından eğitim kurumlarının idari süreçlerini hızlandırmak amacıyla açık kaynak kodlu olarak geliştirilmiştir.
+```
