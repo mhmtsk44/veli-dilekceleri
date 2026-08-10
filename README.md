@@ -16,13 +16,6 @@ Uygulamayı hemen kullanmaya başlamak için tıklayın:
 * **Veri Güdümlü Şablon (DRY Prensibi):** Dilekçe metinleri statik HTML yığını yerine, JavaScript tabanlı modüler bir mimariyle (`AYARLAR` ve `DILEKCELER` objeleri) oluşturulur.
 * **Kalıcı İndirme Özelliği:** Kullanıcılar formu doldurduktan sonra, girilen verilerle birlikte tek bir `.html` dosyası olarak bilgisayarlarına veya telefonlarına kaydedebilirler.
 
-## ⚙️ Kurulum ve MEB Sitelerine Entegrasyon
-
-Herhangi bir sunucu kurulumuna gerek yoktur. `index.html` dosyasını tarayıcıda açmak yeterlidir. 
-
-**Okul Web Sitelerinde (meb.k12.tr) Kullanımı:**
-Güvenlik kısıtlamalarından dolayı bu kodu MEB paneline doğrudan metin olarak yapıştırmayın. Bunun yerine GitHub Pages linkini (yukarıdaki canlı önizleme linki) MEB sitenizin "Bağlantılar" veya "Duyurular" bölümüne dış link (URL) olarak ekleyebilirsiniz. Bu sayede iOS/iPhone cihazlardaki (QuickLook) JavaScript kısıtlamalarını da aşmış olursunuz.
-
 ## 💻 Teknolojiler
 
 * HTML5
