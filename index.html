@@ -1,55 +1,87 @@
 <!DOCTYPE html>
-<html lang="tr"><head>
+<html lang="tr" data-theme="default"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Veli Dilekçeleri - ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</title>
+<script>
+/*! QRious v4.0.2 | (C) 2017 Alasdair Mercer | GPL v3 License
+Based on jsqrencode | (C) 2010 tz@execpc.com | GPL v3 License
+*/
+!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):t.QRious=e()}(this,function(){"use strict";function t(t,e){var n;return"function"==typeof Object.create?n=Object.create(t):(s.prototype=t,n=new s,s.prototype=null),e&&i(!0,n,e),n}function e(e,n,s,r){var o=this;return"string"!=typeof e&&(r=s,s=n,n=e,e=null),"function"!=typeof n&&(r=s,s=n,n=function(){return o.apply(this,arguments)}),i(!1,n,o,r),n.prototype=t(o.prototype,s),n.prototype.constructor=n,n.class_=e||o.class_,n.super_=o,n}function i(t,e,i){for(var n,s,a=0,h=(i=o.call(arguments,2)).length;a<h;a++){s=i[a];for(n in s)t&&!r.call(s,n)||(e[n]=s[n])}}function n(){}var s=function(){},r=Object.prototype.hasOwnProperty,o=Array.prototype.slice,a=e;n.class_="Nevis",n.super_=Object,n.extend=a;var h=n,f=h.extend(function(t,e,i){this.qrious=t,this.element=e,this.element.qrious=t,this.enabled=Boolean(i)},{draw:function(t){},getElement:function(){return this.enabled||(this.enabled=!0,this.render()),this.element},getModuleSize:function(t){var e=this.qrious,i=e.padding||0,n=Math.floor((e.size-2*i)/t.width);return Math.max(1,n)},getOffset:function(t){var e=this.qrious,i=e.padding;if(null!=i)return i;var n=this.getModuleSize(t),s=Math.floor((e.size-n*t.width)/2);return Math.max(0,s)},render:function(t){this.enabled&&(this.resize(),this.reset(),this.draw(t))},reset:function(){},resize:function(){}}),c=f.extend({draw:function(t){var e,i,n=this.qrious,s=this.getModuleSize(t),r=this.getOffset(t),o=this.element.getContext("2d");for(o.fillStyle=n.foreground,o.globalAlpha=n.foregroundAlpha,e=0;e<t.width;e++)for(i=0;i<t.width;i++)t.buffer[i*t.width+e]&&o.fillRect(s*e+r,s*i+r,s,s)},reset:function(){var t=this.qrious,e=this.element.getContext("2d"),i=t.size;e.lineWidth=1,e.clearRect(0,0,i,i),e.fillStyle=t.background,e.globalAlpha=t.backgroundAlpha,e.fillRect(0,0,i,i)},resize:function(){var t=this.element;t.width=t.height=this.qrious.size}}),u=h.extend(null,{BLOCK:[0,11,15,19,23,27,31,16,18,20,22,24,26,28,20,22,24,24,26,28,28,22,24,24,26,26,28,28,24,24,26,26,26,28,28,24,26,26,26,28,28]}),l=h.extend(null,{BLOCKS:[1,0,19,7,1,0,16,10,1,0,13,13,1,0,9,17,1,0,34,10,1,0,28,16,1,0,22,22,1,0,16,28,1,0,55,15,1,0,44,26,2,0,17,18,2,0,13,22,1,0,80,20,2,0,32,18,2,0,24,26,4,0,9,16,1,0,108,26,2,0,43,24,2,2,15,18,2,2,11,22,2,0,68,18,4,0,27,16,4,0,19,24,4,0,15,28,2,0,78,20,4,0,31,18,2,4,14,18,4,1,13,26,2,0,97,24,2,2,38,22,4,2,18,22,4,2,14,26,2,0,116,30,3,2,36,22,4,4,16,20,4,4,12,24,2,2,68,18,4,1,43,26,6,2,19,24,6,2,15,28,4,0,81,20,1,4,50,30,4,4,22,28,3,8,12,24,2,2,92,24,6,2,36,22,4,6,20,26,7,4,14,28,4,0,107,26,8,1,37,22,8,4,20,24,12,4,11,22,3,1,115,30,4,5,40,24,11,5,16,20,11,5,12,24,5,1,87,22,5,5,41,24,5,7,24,30,11,7,12,24,5,1,98,24,7,3,45,28,15,2,19,24,3,13,15,30,1,5,107,28,10,1,46,28,1,15,22,28,2,17,14,28,5,1,120,30,9,4,43,26,17,1,22,28,2,19,14,28,3,4,113,28,3,11,44,26,17,4,21,26,9,16,13,26,3,5,107,28,3,13,41,26,15,5,24,30,15,10,15,28,4,4,116,28,17,0,42,26,17,6,22,28,19,6,16,30,2,7,111,28,17,0,46,28,7,16,24,30,34,0,13,24,4,5,121,30,4,14,47,28,11,14,24,30,16,14,15,30,6,4,117,30,6,14,45,28,11,16,24,30,30,2,16,30,8,4,106,26,8,13,47,28,7,22,24,30,22,13,15,30,10,2,114,28,19,4,46,28,28,6,22,28,33,4,16,30,8,4,122,30,22,3,45,28,8,26,23,30,12,28,15,30,3,10,117,30,3,23,45,28,4,31,24,30,11,31,15,30,7,7,116,30,21,7,45,28,1,37,23,30,19,26,15,30,5,10,115,30,19,10,47,28,15,25,24,30,23,25,15,30,13,3,115,30,2,29,46,28,42,1,24,30,23,28,15,30,17,0,115,30,10,23,46,28,10,35,24,30,19,35,15,30,17,1,115,30,14,21,46,28,29,19,24,30,11,46,15,30,13,6,115,30,14,23,46,28,44,7,24,30,59,1,16,30,12,7,121,30,12,26,47,28,39,14,24,30,22,41,15,30,6,14,121,30,6,34,47,28,46,10,24,30,2,64,15,30,17,4,122,30,29,14,46,28,49,10,24,30,24,46,15,30,4,18,122,30,13,32,46,28,48,14,24,30,42,32,15,30,20,4,117,30,40,7,47,28,43,22,24,30,10,67,15,30,19,6,118,30,18,31,47,28,34,34,24,30,20,61,15,30],FINAL_FORMAT:[30660,29427,32170,30877,26159,25368,27713,26998,21522,20773,24188,23371,17913,16590,20375,19104,13663,12392,16177,14854,9396,8579,11994,11245,5769,5054,7399,6608,1890,597,3340,2107],LEVELS:{L:1,M:2,Q:3,H:4}}),_=h.extend(null,{EXPONENT:[1,2,4,8,16,32,64,128,29,58,116,232,205,135,19,38,76,152,45,90,180,117,234,201,143,3,6,12,24,48,96,192,157,39,78,156,37,74,148,53,106,212,181,119,238,193,159,35,70,140,5,10,20,40,80,160,93,186,105,210,185,111,222,161,95,190,97,194,153,47,94,188,101,202,137,15,30,60,120,240,253,231,211,187,107,214,177,127,254,225,223,163,91,182,113,226,217,175,67,134,17,34,68,136,13,26,52,104,208,189,103,206,129,31,62,124,248,237,199,147,59,118,236,197,151,51,102,204,133,23,46,92,184,109,218,169,79,158,33,66,132,21,42,84,168,77,154,41,82,164,85,170,73,146,57,114,228,213,183,115,230,209,191,99,198,145,63,126,252,229,215,179,123,246,241,255,227,219,171,75,150,49,98,196,149,55,110,220,165,87,174,65,130,25,50,100,200,141,7,14,28,56,112,224,221,167,83,166,81,162,89,178,121,242,249,239,195,155,43,86,172,69,138,9,18,36,72,144,61,122,244,245,247,243,251,235,203,139,11,22,44,88,176,125,250,233,207,131,27,54,108,216,173,71,142,0],LOG:[255,0,1,25,2,50,26,198,3,223,51,238,27,104,199,75,4,100,224,14,52,141,239,129,28,193,105,248,200,8,76,113,5,138,101,47,225,36,15,33,53,147,142,218,240,18,130,69,29,181,194,125,106,39,249,185,201,154,9,120,77,228,114,166,6,191,139,98,102,221,48,253,226,152,37,179,16,145,34,136,54,208,148,206,143,150,219,189,241,210,19,92,131,56,70,64,30,66,182,163,195,72,126,110,107,58,40,84,250,133,186,61,202,94,155,159,10,21,121,43,78,212,229,172,115,243,167,87,7,112,192,247,140,128,99,13,103,74,222,237,49,197,254,24,227,165,153,119,38,184,180,124,17,68,146,217,35,32,137,46,55,63,209,91,149,188,207,205,144,135,151,178,220,252,190,97,242,86,211,171,20,42,93,158,132,60,57,83,71,109,65,162,31,45,67,216,183,123,164,118,196,23,73,236,127,12,111,246,108,161,59,82,41,157,85,170,251,96,134,177,187,204,62,90,203,89,95,176,156,169,160,81,11,245,22,235,122,117,44,215,79,174,213,233,230,231,173,232,116,214,244,234,168,80,88,175]}),d=h.extend(null,{BLOCK:[3220,1468,2713,1235,3062,1890,2119,1549,2344,2936,1117,2583,1330,2470,1667,2249,2028,3780,481,4011,142,3098,831,3445,592,2517,1776,2234,1951,2827,1070,2660,1345,3177]}),v=h.extend(function(t){var e,i,n,s,r,o=t.value.length;for(this._badness=[],this._level=l.LEVELS[t.level],this._polynomial=[],this._value=t.value,this._version=0,this._stringBuffer=[];this._version<40&&(this._version++,n=4*(this._level-1)+16*(this._version-1),s=l.BLOCKS[n++],r=l.BLOCKS[n++],e=l.BLOCKS[n++],i=l.BLOCKS[n],n=e*(s+r)+r-3+(this._version<=9),!(o<=n)););this._dataBlock=e,this._eccBlock=i,this._neccBlock1=s,this._neccBlock2=r;var a=this.width=17+4*this._version;this.buffer=v._createArray(a*a),this._ecc=v._createArray(e+(e+i)*(s+r)+r),this._mask=v._createArray((a*(a+1)+1)/2),this._insertFinders(),this._insertAlignments(),this.buffer[8+a*(a-8)]=1,this._insertTimingGap(),this._reverseMask(),this._insertTimingRowAndColumn(),this._insertVersion(),this._syncMask(),this._convertBitStream(o),this._calculatePolynomial(),this._appendEccToData(),this._interleaveBlocks(),this._pack(),this._finish()},{_addAlignment:function(t,e){var i,n=this.buffer,s=this.width;for(n[t+s*e]=1,i=-2;i<2;i++)n[t+i+s*(e-2)]=1,n[t-2+s*(e+i+1)]=1,n[t+2+s*(e+i)]=1,n[t+i+1+s*(e+2)]=1;for(i=0;i<2;i++)this._setMask(t-1,e+i),this._setMask(t+1,e-i),this._setMask(t-i,e-1),this._setMask(t+i,e+1)},_appendData:function(t,e,i,n){var s,r,o,a=this._polynomial,h=this._stringBuffer;for(r=0;r<n;r++)h[i+r]=0;for(r=0;r<e;r++){if(255!==(s=_.LOG[h[t+r]^h[i]]))for(o=1;o<n;o++)h[i+o-1]=h[i+o]^_.EXPONENT[v._modN(s+a[n-o])];else for(o=i;o<i+n;o++)h[o]=h[o+1];h[i+n-1]=255===s?0:_.EXPONENT[v._modN(s+a[0])]}},_appendEccToData:function(){var t,e=0,i=this._dataBlock,n=this._calculateMaxLength(),s=this._eccBlock;for(t=0;t<this._neccBlock1;t++)this._appendData(e,i,n,s),e+=i,n+=s;for(t=0;t<this._neccBlock2;t++)this._appendData(e,i+1,n,s),e+=i+1,n+=s},_applyMask:function(t){var e,i,n,s,r=this.buffer,o=this.width;switch(t){case 0:for(s=0;s<o;s++)for(n=0;n<o;n++)n+s&1||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 1:for(s=0;s<o;s++)for(n=0;n<o;n++)1&s||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 2:for(s=0;s<o;s++)for(e=0,n=0;n<o;n++,e++)3===e&&(e=0),e||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 3:for(i=0,s=0;s<o;s++,i++)for(3===i&&(i=0),e=i,n=0;n<o;n++,e++)3===e&&(e=0),e||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 4:for(s=0;s<o;s++)for(e=0,i=s>>1&1,n=0;n<o;n++,e++)3===e&&(e=0,i=!i),i||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 5:for(i=0,s=0;s<o;s++,i++)for(3===i&&(i=0),e=0,n=0;n<o;n++,e++)3===e&&(e=0),(n&s&1)+!(!e|!i)||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 6:for(i=0,s=0;s<o;s++,i++)for(3===i&&(i=0),e=0,n=0;n<o;n++,e++)3===e&&(e=0),(n&s&1)+(e&&e===i)&1||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 7:for(i=0,s=0;s<o;s++,i++)for(3===i&&(i=0),e=0,n=0;n<o;n++,e++)3===e&&(e=0),(e&&e===i)+(n+s&1)&1||this._isMasked(n,s)||(r[n+s*o]^=1)}},_calculateMaxLength:function(){return this._dataBlock*(this._neccBlock1+this._neccBlock2)+this._neccBlock2},_calculatePolynomial:function(){var t,e,i=this._eccBlock,n=this._polynomial;for(n[0]=1,t=0;t<i;t++){for(n[t+1]=1,e=t;e>0;e--)n[e]=n[e]?n[e-1]^_.EXPONENT[v._modN(_.LOG[n[e]]+t)]:n[e-1];n[0]=_.EXPONENT[v._modN(_.LOG[n[0]]+t)]}for(t=0;t<=i;t++)n[t]=_.LOG[n[t]]},_checkBadness:function(){var t,e,i,n,s,r=0,o=this._badness,a=this.buffer,h=this.width;for(s=0;s<h-1;s++)for(n=0;n<h-1;n++)(a[n+h*s]&&a[n+1+h*s]&&a[n+h*(s+1)]&&a[n+1+h*(s+1)]||!(a[n+h*s]||a[n+1+h*s]||a[n+h*(s+1)]||a[n+1+h*(s+1)]))&&(r+=v.N2);var f=0;for(s=0;s<h;s++){for(i=0,o[0]=0,t=0,n=0;n<h;n++)t===(e=a[n+h*s])?o[i]++:o[++i]=1,f+=(t=e)?1:-1;r+=this._getBadness(i)}f<0&&(f=-f);var c=0,u=f;for(u+=u<<2,u<<=1;u>h*h;)u-=h*h,c++;for(r+=c*v.N4,n=0;n<h;n++){for(i=0,o[0]=0,t=0,s=0;s<h;s++)t===(e=a[n+h*s])?o[i]++:o[++i]=1,t=e;r+=this._getBadness(i)}return r},_convertBitStream:function(t){var e,i,n=this._ecc,s=this._version;for(i=0;i<t;i++)n[i]=this._value.charCodeAt(i);var r=this._stringBuffer=n.slice(),o=this._calculateMaxLength();t>=o-2&&(t=o-2,s>9&&t--);var a=t;if(s>9){for(r[a+2]=0,r[a+3]=0;a--;)e=r[a],r[a+3]|=255&e<<4,r[a+2]=e>>4;r[2]|=255&t<<4,r[1]=t>>4,r[0]=64|t>>12}else{for(r[a+1]=0,r[a+2]=0;a--;)e=r[a],r[a+2]|=255&e<<4,r[a+1]=e>>4;r[1]|=255&t<<4,r[0]=64|t>>4}for(a=t+3-(s<10);a<o;)r[a++]=236,r[a++]=17},_getBadness:function(t){var e,i=0,n=this._badness;for(e=0;e<=t;e++)n[e]>=5&&(i+=v.N1+n[e]-5);for(e=3;e<t-1;e+=2)n[e-2]===n[e+2]&&n[e+2]===n[e-1]&&n[e-1]===n[e+1]&&3*n[e-1]===n[e]&&(0===n[e-3]||e+3>t||3*n[e-3]>=4*n[e]||3*n[e+3]>=4*n[e])&&(i+=v.N3);return i},_finish:function(){this._stringBuffer=this.buffer.slice();var t,e,i=0,n=3e4;for(e=0;e<8&&(this._applyMask(e),(t=this._checkBadness())<n&&(n=t,i=e),7!==i);e++)this.buffer=this._stringBuffer.slice();i!==e&&this._applyMask(i),n=l.FINAL_FORMAT[i+(this._level-1<<3)];var s=this.buffer,r=this.width;for(e=0;e<8;e++,n>>=1)1&n&&(s[r-1-e+8*r]=1,e<6?s[8+r*e]=1:s[8+r*(e+1)]=1);for(e=0;e<7;e++,n>>=1)1&n&&(s[8+r*(r-7+e)]=1,e?s[6-e+8*r]=1:s[7+8*r]=1)},_interleaveBlocks:function(){var t,e,i=this._dataBlock,n=this._ecc,s=this._eccBlock,r=0,o=this._calculateMaxLength(),a=this._neccBlock1,h=this._neccBlock2,f=this._stringBuffer;for(t=0;t<i;t++){for(e=0;e<a;e++)n[r++]=f[t+e*i];for(e=0;e<h;e++)n[r++]=f[a*i+t+e*(i+1)]}for(e=0;e<h;e++)n[r++]=f[a*i+t+e*(i+1)];for(t=0;t<s;t++)for(e=0;e<a+h;e++)n[r++]=f[o+t+e*s];this._stringBuffer=n},_insertAlignments:function(){var t,e,i,n=this._version,s=this.width;if(n>1)for(t=u.BLOCK[n],i=s-7;;){for(e=s-7;e>t-3&&(this._addAlignment(e,i),!(e<t));)e-=t;if(i<=t+9)break;i-=t,this._addAlignment(6,i),this._addAlignment(i,6)}},_insertFinders:function(){var t,e,i,n,s=this.buffer,r=this.width;for(t=0;t<3;t++){for(e=0,n=0,1===t&&(e=r-7),2===t&&(n=r-7),s[n+3+r*(e+3)]=1,i=0;i<6;i++)s[n+i+r*e]=1,s[n+r*(e+i+1)]=1,s[n+6+r*(e+i)]=1,s[n+i+1+r*(e+6)]=1;for(i=1;i<5;i++)this._setMask(n+i,e+1),this._setMask(n+1,e+i+1),this._setMask(n+5,e+i),this._setMask(n+i+1,e+5);for(i=2;i<4;i++)s[n+i+r*(e+2)]=1,s[n+2+r*(e+i+1)]=1,s[n+4+r*(e+i)]=1,s[n+i+1+r*(e+4)]=1}},_insertTimingGap:function(){var t,e,i=this.width;for(e=0;e<7;e++)this._setMask(7,e),this._setMask(i-8,e),this._setMask(7,e+i-7);for(t=0;t<8;t++)this._setMask(t,7),this._setMask(t+i-8,7),this._setMask(t,i-8)},_insertTimingRowAndColumn:function(){var t,e=this.buffer,i=this.width;for(t=0;t<i-14;t++)1&t?(this._setMask(8+t,6),this._setMask(6,8+t)):(e[8+t+6*i]=1,e[6+i*(8+t)]=1)},_insertVersion:function(){var t,e,i,n,s=this.buffer,r=this._version,o=this.width;if(r>6)for(t=d.BLOCK[r-7],e=17,i=0;i<6;i++)for(n=0;n<3;n++,e--)1&(e>11?r>>e-12:t>>e)?(s[5-i+o*(2-n+o-11)]=1,s[2-n+o-11+o*(5-i)]=1):(this._setMask(5-i,2-n+o-11),this._setMask(2-n+o-11,5-i))},_isMasked:function(t,e){var i=v._getMaskBit(t,e);return 1===this._mask[i]},_pack:function(){var t,e,i,n=1,s=1,r=this.width,o=r-1,a=r-1,h=(this._dataBlock+this._eccBlock)*(this._neccBlock1+this._neccBlock2)+this._neccBlock2;for(e=0;e<h;e++)for(t=this._stringBuffer[e],i=0;i<8;i++,t<<=1){128&t&&(this.buffer[o+r*a]=1);do{s?o--:(o++,n?0!==a?a--:(n=!n,6===(o-=2)&&(o--,a=9)):a!==r-1?a++:(n=!n,6===(o-=2)&&(o--,a-=8))),s=!s}while(this._isMasked(o,a))}},_reverseMask:function(){var t,e,i=this.width;for(t=0;t<9;t++)this._setMask(t,8);for(t=0;t<8;t++)this._setMask(t+i-8,8),this._setMask(8,t);for(e=0;e<7;e++)this._setMask(8,e+i-7)},_setMask:function(t,e){var i=v._getMaskBit(t,e);this._mask[i]=1},_syncMask:function(){var t,e,i=this.width;for(e=0;e<i;e++)for(t=0;t<=e;t++)this.buffer[t+i*e]&&this._setMask(t,e)}},{_createArray:function(t){var e,i=[];for(e=0;e<t;e++)i[e]=0;return i},_getMaskBit:function(t,e){var i;return t>e&&(i=t,t=e,e=i),i=e,i+=e*e,i>>=1,i+=t},_modN:function(t){for(;t>=255;)t=((t-=255)>>8)+(255&t);return t},N1:3,N2:3,N3:40,N4:10}),p=v,m=f.extend({draw:function(){this.element.src=this.qrious.toDataURL()},reset:function(){this.element.src=""},resize:function(){var t=this.element;t.width=t.height=this.qrious.size}}),g=h.extend(function(t,e,i,n){this.name=t,this.modifiable=Boolean(e),this.defaultValue=i,this._valueTransformer=n},{transform:function(t){var e=this._valueTransformer;return"function"==typeof e?e(t,this):t}}),k=h.extend(null,{abs:function(t){return null!=t?Math.abs(t):null},hasOwn:function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},noop:function(){},toUpperCase:function(t){return null!=t?t.toUpperCase():null}}),w=h.extend(function(t){this.options={},t.forEach(function(t){this.options[t.name]=t},this)},{exists:function(t){return null!=this.options[t]},get:function(t,e){return w._get(this.options[t],e)},getAll:function(t){var e,i=this.options,n={};for(e in i)k.hasOwn(i,e)&&(n[e]=w._get(i[e],t));return n},init:function(t,e,i){"function"!=typeof i&&(i=k.noop);var n,s;for(n in this.options)k.hasOwn(this.options,n)&&(s=this.options[n],w._set(s,s.defaultValue,e),w._createAccessor(s,e,i));this._setAll(t,e,!0)},set:function(t,e,i){return this._set(t,e,i)},setAll:function(t,e){return this._setAll(t,e)},_set:function(t,e,i,n){var s=this.options[t];if(!s)throw new Error("Invalid option: "+t);if(!s.modifiable&&!n)throw new Error("Option cannot be modified: "+t);return w._set(s,e,i)},_setAll:function(t,e,i){if(!t)return!1;var n,s=!1;for(n in t)k.hasOwn(t,n)&&this._set(n,t[n],e,i)&&(s=!0);return s}},{_createAccessor:function(t,e,i){var n={get:function(){return w._get(t,e)}};t.modifiable&&(n.set=function(n){w._set(t,n,e)&&i(n,t)}),Object.defineProperty(e,t.name,n)},_get:function(t,e){return e["_"+t.name]},_set:function(t,e,i){var n="_"+t.name,s=i[n],r=t.transform(null!=e?e:t.defaultValue);return i[n]=r,r!==s}}),M=w,b=h.extend(function(){this._services={}},{getService:function(t){var e=this._services[t];if(!e)throw new Error("Service is not being managed with name: "+t);return e},setService:function(t,e){if(this._services[t])throw new Error("Service is already managed with name: "+t);e&&(this._services[t]=e)}}),B=new M([new g("background",!0,"white"),new g("backgroundAlpha",!0,1,k.abs),new g("element"),new g("foreground",!0,"black"),new g("foregroundAlpha",!0,1,k.abs),new g("level",!0,"L",k.toUpperCase),new g("mime",!0,"image/png"),new g("padding",!0,null,k.abs),new g("size",!0,100,k.abs),new g("value",!0,"")]),y=new b,O=h.extend(function(t){B.init(t,this,this.update.bind(this));var e=B.get("element",this),i=y.getService("element"),n=e&&i.isCanvas(e)?e:i.createCanvas(),s=e&&i.isImage(e)?e:i.createImage();this._canvasRenderer=new c(this,n,!0),this._imageRenderer=new m(this,s,s===e),this.update()},{get:function(){return B.getAll(this)},set:function(t){B.setAll(t,this)&&this.update()},toDataURL:function(t){return this.canvas.toDataURL(t||this.mime)},update:function(){var t=new p({level:this.level,value:this.value});this._canvasRenderer.render(t),this._imageRenderer.render(t)}},{use:function(t){y.setService(t.getName(),t)}});Object.defineProperties(O.prototype,{canvas:{get:function(){return this._canvasRenderer.getElement()}},image:{get:function(){return this._imageRenderer.getElement()}}});var A=O,L=h.extend({getName:function(){}}).extend({createCanvas:function(){},createImage:function(){},getName:function(){return"element"},isCanvas:function(t){},isImage:function(t){}}).extend({createCanvas:function(){return document.createElement("canvas")},createImage:function(){return document.createElement("img")},isCanvas:function(t){return t instanceof HTMLCanvasElement},isImage:function(t){return t instanceof HTMLImageElement}});return A.use(new L),A});
+</script>
 <style>
-  :root{
-    --ink:#1a1a1a; --line:#333; --muted:#666; --accent:#7a1f2b;
-    --paper:#ffffff; --bg:#e9e6df; --field:#f7f5f0;
+  :root {
+    --ink: #1a1a1a; --line: #333333; --muted: #666666; --accent: #7a1f2b;
+    --paper: #ffffff; --bg: #e9e6df; --field: #f7f5f0;
+    --focus-bg: #fff8db; --err-bg: #fdeaea; --err-focus-bg: #fbdada;
+    --panel-bg: #fffdf5; --school-bg: #faf3ef; --btn-text: #ffffff;
+    --shadow: 0 2px 14px rgba(0,0,0,.18); --footer-bg: rgba(255,255,255,.85);
   }
+  
+  [data-theme="official"] {
+    --ink: #000000; --line: #2c3e50; --muted: #546e7a; --accent: #003366;
+    --paper: #ffffff; --bg: #e0e6ed; --field: #f0f4f8;
+    --focus-bg: #e3f2fd; --err-bg: #ffebee; --err-focus-bg: #ffcdd2;
+    --panel-bg: #ffffff; --school-bg: #e8eaf6; --btn-text: #ffffff;
+    --shadow: 0 2px 14px rgba(0,0,0,.1); --footer-bg: rgba(255,255,255,.9);
+  }
+
   *{box-sizing:border-box;}
   body{font-family:"Times New Roman", Georgia, serif;background:var(--bg);color:var(--ink);margin:0;padding:24px 0 30px;}
 
   .tabs{max-width:850px;margin:0 auto 18px;display:flex;flex-wrap:wrap;gap:8px;padding:0 12px;}
   .tab-btn{flex:1 1 150px;font-family:Arial, sans-serif;font-size:13px;font-weight:600;padding:11px 8px;
     border:1px solid var(--accent);background:var(--paper);color:var(--accent);cursor:pointer;border-radius:6px;transition:.15s;}
-  .tab-btn.active{background:var(--accent);color:#fff;}
+  .tab-btn.active{background:var(--accent);color:var(--btn-text);}
 
   .toolbar{max-width:850px;margin:0 auto 18px;padding:0 12px;display:flex;gap:8px;justify-content:flex-end;font-family:Arial, sans-serif;}
-  .btn{font-family:Arial, sans-serif;font-size:13px;padding:9px 16px;border:1px solid var(--accent);background:#fff;color:var(--accent);border-radius:6px;cursor:pointer;}
-  .btn:hover{background:var(--accent);color:#fff;}
-  .btn.primary{background:var(--accent);color:#fff;}
+  .btn{font-family:Arial, sans-serif;font-size:13px;padding:9px 16px;border:1px solid var(--accent);background:var(--paper);color:var(--accent);border-radius:6px;cursor:pointer;outline:none;}
+  .btn:hover{background:var(--accent);color:var(--btn-text);}
+  .btn.primary{background:var(--accent);color:var(--btn-text);}
   .btn.primary:hover{opacity:.9;}
+  
+  select.btn { appearance: auto; }
 
   .school-name-panel{max-width:850px;margin:0 auto 14px;padding:12px 14px;border:1px solid var(--accent);border-radius:8px;
-    background:#fffdf5;font-family:Arial, sans-serif;display:flex;flex-wrap:wrap;align-items:center;gap:10px;}
+    background:var(--panel-bg);font-family:Arial, sans-serif;display:flex;flex-wrap:wrap;align-items:center;gap:10px;}
   .school-name-panel label{font-size:13px;font-weight:bold;color:var(--accent);white-space:nowrap;}
-  .school-name-panel input[type=text]{flex:1 1 260px;font-family:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;outline:none;}
-  .school-name-panel input[type=text]:focus{border-color:var(--accent);background:#fff8db;}
+  .school-name-panel input[type=text]{flex:1 1 260px;font-family:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;outline:none;background:var(--paper);color:var(--ink);}
+  .school-name-panel input[type=text]:focus{border-color:var(--accent);background:var(--focus-bg);}
   .school-name-panel .hint{flex-basis:100%;font-size:12px;color:var(--muted);}
   .school-name-panel .warn{flex-basis:100%;font-size:12px;color:var(--accent);}
+  .kvkk-badge{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--accent);
+    border:1px solid var(--accent);border-radius:12px;padding:3px 10px;background:var(--panel-bg);
+    cursor:help;white-space:nowrap;}
 
-  .sheet{max-width:850px;margin:0 auto 30px;background:var(--paper);padding:46px 54px 40px;box-shadow:0 2px 14px rgba(0,0,0,.18);display:none;}
+  .sheet{max-width:850px;margin:0 auto 30px;background:var(--paper);padding:46px 54px 40px;box-shadow:var(--shadow);display:none; contain: layout style; position: relative;}
   .sheet.active{display:block;}
 
   h1.title{font-size:16px;text-align:center;letter-spacing:.03em;margin:0 0 28px;text-transform:uppercase;outline:none;
     border-bottom:1px dashed transparent;padding-bottom:4px;transition:.15s;}
-  h1.title:hover, h1.title:focus{border-bottom:1px dashed var(--accent);background:#fffdf5;}
+  h1.title:hover, h1.title:focus{border-bottom:1px dashed var(--accent);background:var(--panel-bg);}
+
+  /* QR Kod - Tam olarak tablonun üstüne oturacak ve yer kaplamayacak şekilde hizalandı */
+  .qr-box{position:absolute;top:30px;right:54px;width:38px;height:38px;visibility:hidden;background:#fff;border:1px solid var(--line);padding:2px;border-radius:4px;}
+  .qr-box.active{visibility:visible;}
+  .qr-box canvas{width:100%;height:100%;display:block;}
 
   .table-heading{font-weight:bold;font-size:16px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px;}
 
   table.idbox{width:100%;border-collapse:collapse;margin-bottom:26px;}
   table.idbox td{border:1px solid var(--line);padding:5px 10px;vertical-align:middle;}
   table.idbox td.lbl{width:220px;font-weight:normal;font-size:16px;}
-  table.idbox input[type=text]{width:100%;border:none;font-family:inherit;font-size:16px;padding:5px 6px;outline:none;}
-  table.idbox input[type=text]:focus{background:#fff8db;}
+  table.idbox input[type=text]{width:100%;border:none;font-family:inherit;font-size:16px;padding:5px 6px;outline:none;background:transparent;color:var(--ink);}
+  table.idbox input[type=text]:focus{background:var(--focus-bg);}
   table.idbox input.tc-no.tc-invalid,
   .signblock .tc-line input.tc-no.tc-invalid,
-  .contact-lines input.tel-no.tel-invalid{background:#fdeaea;}
+  .contact-lines input.tel-no.tel-invalid,
+  .dob-row input.date-invalid,
+  .date-fields input.date-invalid{background:var(--err-bg);}
   table.idbox input.tc-no.tc-invalid:focus,
   .signblock .tc-line input.tc-no.tc-invalid:focus,
-  .contact-lines input.tel-no.tel-invalid:focus{background:#fbdada;}
+  .contact-lines input.tel-no.tel-invalid:focus,
+  .dob-row input.date-invalid:focus,
+  .date-fields input.date-invalid:focus{background:var(--err-focus-bg);}
   .dual-field{display:flex;align-items:baseline;gap:0;justify-content:flex-start;}
   table.idbox .dual-field input[type=text]{width:120px;flex:none !important;border:none;}
   .dual-field .dfsep{flex:none;padding:0 0.35em;color:var(--muted);}
@@ -59,13 +91,15 @@
   p.body-text b{font-weight:bold;}
   .inline-blank{border:none;border-bottom:1px dotted var(--line);background:var(--field);font-family:inherit;font-size:inherit;
     font-style:inherit;color:inherit;padding:0 3px;text-align:center;outline:none;}
-  .inline-blank:focus{background:#fff8db;}
+  .inline-blank:focus{background:var(--focus-bg);}
   .inline-blank:not(:placeholder-shown){border-bottom-color:transparent;}
+
+  input::placeholder { color: var(--muted); opacity: 0.8; }
 
   .dob-row{display:flex;align-items:baseline;gap:0;flex-wrap:nowrap;}
   .dob-row input{border:none;border-bottom:1px solid var(--line);background:var(--field);font-family:inherit;font-size:16px;
-    padding:1px 1px;text-align:center;outline:none;box-sizing:content-box;}
-  .dob-row input:focus{background:#fff8db;}
+    padding:1px 1px;text-align:center;outline:none;box-sizing:content-box;color:var(--ink);}
+  .dob-row input:focus{background:var(--focus-bg);}
   .dob-row input:not(:placeholder-shown){border-bottom-color:transparent;}
   .dob-row .dd, .dob-row .mm{width:22px !important;flex:none;}
   .dob-row .yyyy{width:38px !important;flex:none;}
@@ -87,7 +121,7 @@
   .school-only .radio-row label{cursor:default;}
   .radio-row input[type=radio]{appearance:none;-webkit-appearance:none;-moz-appearance:none;width:16px;height:16px;
     min-width:16px;min-height:16px;margin:3px 0 0;flex:none;border:1.5px solid var(--ink);border-radius:50%;
-    background:#fff;cursor:pointer;position:relative;padding:0;}
+    background:var(--paper);cursor:pointer;position:relative;padding:0;}
   .radio-row input[type=radio]:checked::after{content:"";position:absolute;top:50%;left:50%;width:8px;height:8px;
     border-radius:50%;background:var(--accent);transform:translate(-50%,-50%);}
   .radio-row label{cursor:pointer;line-height:1.4;}
@@ -96,17 +130,17 @@
   .signblock{width:280px;margin:22px 0 4px auto;text-align:right;}
   .date-fields{display:flex;align-items:baseline;justify-content:flex-end;gap:2px;font-size:16px;}
   .date-fields input{width:22px;text-align:center;border:none;border-bottom:1px solid var(--line);background:transparent;
-    font-family:inherit;font-size:16px;padding:0;}
+    font-family:inherit;font-size:16px;padding:0;color:var(--ink);}
   .date-fields input.yr{width:40px;}
   .date-fields .sep{padding:0 1px;}
   .signblock .cap{font-size:16px;color:var(--muted);margin-top:34px;}
   .signblock input.name-input{width:100%;border:none;background:var(--field);font-family:inherit;font-size:16px;
-    padding:5px 6px;text-align:right;outline:none;margin-top:6px;}
-  .signblock input.name-input:focus{background:#fff8db;}
+    padding:5px 6px;text-align:right;outline:none;margin-top:6px;color:var(--ink);}
+  .signblock input.name-input:focus{background:var(--focus-bg);}
   .signblock .tc-line{margin-top:4px;font-size:16px;color:var(--muted);white-space:nowrap;}
   .signblock .tc-line input{width:110px;border:none;border-bottom:1px dotted var(--line);background:var(--field);
     font-family:inherit;font-size:16px;color:var(--ink);padding:1px 3px;text-align:center;outline:none;}
-  .signblock .tc-line input:focus{background:#fff8db;}
+  .signblock .tc-line input:focus{background:var(--focus-bg);}
   .signblock .tc-line input:not(:placeholder-shown){border-bottom-color:transparent;}
 
   .contact-lines{margin:20px 0 22px;font-size:16px;line-height:1.9;}
@@ -114,8 +148,8 @@
   .contact-lines .cline .clbl{font-weight:normal;flex:none;display:inline-block;width:52px;text-align:right;}
   .contact-lines .cline .colon{flex:none;font-weight:bold;margin-right:2px;}
   .contact-lines input[type=text]{flex:1;border:none;border-bottom:1px dotted var(--line);background:transparent;
-    font-family:inherit;font-size:13.5px;padding:2px 4px;outline:none;}
-  .contact-lines input[type=text]:focus{background:#fff8db;}
+    font-family:inherit;font-size:16px;padding:2px 4px;outline:none;color:var(--ink);}
+  .contact-lines input[type=text]:focus{background:var(--focus-bg);}
 
   .ekler{font-size:16px;margin:0 0 14px;counter-reset:ekcounter;}
   .ekler .h{font-weight:normal;margin-bottom:8px;letter-spacing:.02em;}
@@ -124,12 +158,21 @@
   .ekler .ek-row input[type=checkbox]{width:15px;height:15px;cursor:pointer;accent-color:var(--accent);flex:none;}
   .ekler .ek-row label{cursor:pointer;font-size:16px;}
 
-  .school-only{border:2px dashed var(--accent);padding:16px 18px;margin-top:20px;background:#faf3ef;border-radius:6px;}
+  .school-only{border:2px dashed var(--accent);padding:16px 18px;margin-top:20px;background:var(--school-bg);border-radius:6px;}
   .school-only .h{font-weight:bold;color:var(--accent);font-size:16px;letter-spacing:.03em;margin-bottom:10px;text-transform:uppercase;}
   .school-only .sub{font-size:16px;font-style:italic;color:var(--muted);margin-bottom:10px;}
 
   @page{size:A4;margin:0;}
   @media print{
+    /* Hangi tema seçili olursa olsun, yazıcıya daima temiz/standart versiyonu gönder */
+    :root, [data-theme="official"] {
+      --ink: #1a1a1a !important; --line: #333333 !important; --muted: #666666 !important; --accent: #7a1f2b !important;
+      --paper: #ffffff !important; --bg: #ffffff !important; --field: transparent !important;
+      --focus-bg: transparent !important; --err-bg: transparent !important; --err-focus-bg: transparent !important;
+      --panel-bg: #ffffff !important; --school-bg: #ffffff !important; --btn-text: #ffffff !important;
+      --shadow: none !important;
+    }
+
     html, body{width:210mm;height:297mm;}
     body{background:#fff;padding:0;margin:0;}
     .tabs, .toolbar, .app-footer, .school-name-panel, .clear-radio{display:none !important;}
@@ -137,6 +180,10 @@
     .sheet.active{display:block !important;box-shadow:none;width:210mm;max-width:210mm;min-width:0;margin:0;
       padding:1.5cm 1.5cm 0.5cm 1.5cm;box-sizing:border-box;}
     h1.title{margin-bottom:27.6pt;font-size:12pt;}
+    
+    /* Yazdırılırken de tablonun tam üstüne hizalanır */
+    .qr-box{top:8mm;right:1.5cm;width:12mm;height:12mm;border:none;padding:0;}
+    
     table.idbox{margin-bottom:27.6pt;}
     .table-heading{font-size:12pt;margin-bottom:4px;}
     table.idbox td{padding:1px 6px;font-size:12pt;line-height:1.1;}
@@ -155,18 +202,19 @@
     .signblock{margin:18px 0 2px auto;}
     .date-fields{font-size:12pt;}
     .contact-lines{margin:13.8pt 0 13.8pt;line-height:1.15;font-size:12pt;}
+    .contact-lines input[type=text]{font-size:12pt;}
     .ekler{margin:0 0 13.8pt;font-size:12pt;}
     .ekler .h{margin-bottom:2px;}
     .ekler.ekler-single .h{margin-bottom:0;}
     .ekler.ekler-single .h .ek-single{display:inline;}
     .ekler .ek-row{padding:0 4px;margin:0;line-height:1.1;}
-    .school-only{padding:3px 6px;margin-top:4px;page-break-inside:avoid;line-height:1.08;}
+    .school-only{padding:3px 6px;margin-top:4px;page-break-inside:avoid;line-height:1.08;border-color:#000 !important;}
     .school-only .h{margin-bottom:1px;font-size:12pt;}
     .school-only .sub{margin-bottom:1px;font-size:12pt;}
     .school-only .radio-row label{font-size:12pt;}
     .school-only .radio-row .hint{font-size:12pt;}
     input[type=text], input.name-input{background:transparent !important;}
-    input.tc-no.tc-invalid, input.tel-no.tel-invalid{background:transparent !important;}
+    input.tc-no.tc-invalid, input.tel-no.tel-invalid, input.date-invalid{background:transparent !important;}
     input::placeholder{color:transparent !important;-webkit-text-fill-color:transparent !important;opacity:0 !important;}
     .date-fields input, .contact-lines input[type=text], .signblock input.name-input{border-bottom:none !important;}
     .signblock .tc-line{font-size:12pt;margin-top:2px;}
@@ -182,18 +230,27 @@
     .ekler .ek-row.print-show{display:flex !important;counter-increment:ekcounter;padding-left:0;}
     .ekler .ek-row.print-show::before{content:counter(ekcounter) ". ";font-weight:normal;flex:none;}
 
-    /* Ek alan (ör. Nakil Gerekçesi seçim bloğu) sığdırmayı zorlayan dilekçelerde
-       dikey boşlukları sıkılaştırır; tüm ekler işaretliyken tek sayfaya sığması
-       için gereklidir. Yalnızca .sheet-compact işaretli sayfalarda etkilidir. */
-    .sheet-compact h1.title{margin-bottom:16pt;}
-    .sheet-compact table.idbox{margin-bottom:14pt;}
-    .sheet-compact .contact-lines{margin:8pt 0;}
-    .sheet-compact .gerekce-block{margin:2px 0 4px;}
-    .sheet-compact .signblock{margin:12px 0 2px auto;}
+    .sheet-compact-1 h1.title{margin-bottom:23pt;}
+    .sheet-compact-1 table.idbox{margin-bottom:22pt;}
+    .sheet-compact-1 .contact-lines{margin:11pt 0;}
+    .sheet-compact-1 .gerekce-block{margin:3px 0 5px;}
+    .sheet-compact-1 .signblock{margin:15px 0 2px auto;}
+
+    .sheet-compact-2 h1.title{margin-bottom:19.5pt;}
+    .sheet-compact-2 table.idbox{margin-bottom:18pt;}
+    .sheet-compact-2 .contact-lines{margin:9.5pt 0;}
+    .sheet-compact-2 .gerekce-block{margin:2.5px 0 4.5px;}
+    .sheet-compact-2 .signblock{margin:13.5px 0 2px auto;}
+
+    .sheet-compact-3 h1.title{margin-bottom:16pt;}
+    .sheet-compact-3 table.idbox{margin-bottom:14pt;}
+    .sheet-compact-3 .contact-lines{margin:8pt 0;}
+    .sheet-compact-3 .gerekce-block{margin:2px 0 4px;}
+    .sheet-compact-3 .signblock{margin:12px 0 2px auto;}
   }
 
   .app-footer{position:fixed;right:14px;bottom:10px;font-family:Arial, sans-serif;font-size:10.5px;color:var(--muted);
-    background:rgba(255,255,255,.85);padding:3px 8px;border-radius:4px;pointer-events:none;z-index:50;}
+    background:var(--footer-bg);padding:3px 8px;border-radius:4px;pointer-events:none;z-index:50;}
 
   @media (max-width:600px){
     body{padding:16px 0 40px;}
@@ -203,6 +260,9 @@
     .toolbar .btn{flex:1 1 140px;padding:12px 14px;font-size:14px;}
     .sheet{padding:22px 14px;}
     h1.title{font-size:14px;margin-bottom:20px;}
+    
+    .qr-box{top:11px;right:14px;width:32px;height:32px;}
+
     table.idbox, table.idbox tbody, table.idbox tr, table.idbox td{display:block;width:100% !important;}
     table.idbox tr{margin-bottom:0;}
     table.idbox td.lbl{width:auto;border-bottom:none;padding:8px 10px 2px;}
@@ -228,31 +288,37 @@
   <label for="schoolNameInput">Okul Adı:</label>
   <input type="text" id="schoolNameInput" placeholder="Örn: ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE" value="ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE">
   <button class="btn primary" onclick="saveAsFile()">Kaydet</button>
+  <span class="kvkk-badge" title="Kaydedilen dosya, formda o an yazılı olan T.C. kimlik no, telefon, adres gibi bilgileri İÇERMEZ; yalnızca okul adı işlenmiş boş bir şablon olarak kaydedilir (KVKK).">🔒 Temiz şablon kaydedilir</span>
   <span class="hint">Okul adını yazıp Kaydet'e bastığınızda, tüm dilekçelerin başlığı güncellenir ve okul adınız hazır olarak bilgisayarınıza kaydedilir.</span>
   <span class="hint">T.C. Kimlik No alanları 11 hane girildiğinde otomatik doğrulanır; geçersiz numaralar açık pembe renkle işaretlenir (yazdırıldığında bu renklendirme görünmez).</span>
-  <span class="warn">Not: Kaydedilen dosya, formda yazdığınız T.C. kimlik no, telefon ve adres bilgilerini de içerir. Dosyayı paylaşırken dikkatli olunuz.</span>
+  <span class="hint">Kaydedilen dosya, formda o an yazılı olan T.C. kimlik no, telefon, adres gibi bilgileri İÇERMEZ; yalnızca okul adı işlenmiş boş bir şablon olarak kaydedilir (KVKK).</span>
 </div>
 
 <div class="tabs" id="tabs"><button class="tab-btn active">Kayıt Dilekçesi</button><button class="tab-btn">Nakil Dilekçesi</button><button class="tab-btn">İsteğe Bağlı Kayıt</button><button class="tab-btn">Kayıt Erteleme</button><button class="tab-btn">Sınıf Tekrarı</button></div>
 
 <div class="toolbar">
+  <select id="themeSelector" class="btn" title="Tema Seçimi" aria-label="Tema Seçimi">
+    <option value="default" selected="selected">Klasik Tema</option>
+    <option value="official">Resmi / Kurumsal</option>
+  </select>
   <button class="btn" onclick="clearAll()">Formu Temizle</button>
   <button class="btn primary" onclick="window.print()">Yazdır / PDF Kaydet</button>
 </div>
 
-<div id="sheets"><div class="sheet active" id="sheet-0"><div class="table-heading">Öğrenci Bilgileri</div>
+<div id="sheets"><div class="sheet active" id="sheet-0"><div class="qr-box" title="Öğrenci T.C. Kimlik No Barkodu" aria-hidden="true"><canvas></canvas></div>
+<div class="table-heading">Öğrenci Bilgileri</div>
 <table class="idbox"><tbody>
-<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
-<tr><td class="lbl">Adı Soyadı</td><td><input type="text" placeholder="Ad Soyad" value=""></td></tr>
-<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" placeholder="Baba Adı" style="width:80px" value=""><span class="dfsep">/</span><input type="text" placeholder="Anne Adı" style="width:82px" value=""></div></td></tr>
-<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" placeholder="29" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" placeholder="02" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" placeholder="2016" value=""><span class="dash">–</span><input type="text" class="place" placeholder="Battalgazi" value=""></div></td></tr>
-<tr><td class="lbl">Sınıfı / Kademesi</td><td><input type="text" placeholder="Örn: 1. Sınıf" value=""></td></tr>
+<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Öğrenci T.C. Kimlik Numarası" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
+<tr><td class="lbl">Adı Soyadı</td><td><input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad" value=""></td></tr>
+<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" aria-label="Baba Adı" placeholder="Baba Adı" value=""><span class="dfsep">/</span><input type="text" aria-label="Anne Adı" placeholder="Anne Adı" value=""></div></td></tr>
+<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" inputmode="numeric" aria-label="Doğum Günü" placeholder="29" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" inputmode="numeric" aria-label="Doğum Ayı" placeholder="02" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" inputmode="numeric" aria-label="Doğum Yılı" placeholder="2016" value=""><span class="dash">–</span><input type="text" class="place" aria-label="Doğum Yeri" placeholder="Battalgazi" value=""></div></td></tr>
+<tr><td class="lbl">Sınıfı / Kademesi</td><td><input type="text" aria-label="Sınıfı / Kademesi" placeholder="Örn: 1. Sınıf" value=""></td></tr>
 <tr><td class="lbl">Dilekçenin Özü</td><td class="note-cell">Öğrencimin, adres doğrulama süreci sonucunda okulunuza kesin kaydının yapılması talebi.</td></tr>
 </tbody></table>
-<h1 class="title" contenteditable="true" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
+<h1 class="title" contenteditable="plaintext-only" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
 <p class="body-text">Velisi bulunduğum ve kimlik bilgileri yukarıdaki tabloda yer alan öğrencimin, MERNİS kayıtlarında yerleşim yeri adresi birlikte oturma gerekçesiyle (muvafakatle) oluşmuş olup Adrese Dayalı Kayıt Sistemi (e-Kayıt) Usul ve Esaslarının 3'üncü maddesi gereğince <b>"Adres Doğrulama Süreci"</b> kapsamına alınmıştır. Adres doğrulamasına esas resmî belgeler ekte sunulmuş olup adresimizde fiilen oturduğumuzun teyidi ile öğrencimin okulunuza <b>kesin kaydının yapılmasını</b> arz ederim.</p>
-<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" placeholder="GG" value="11"><span class="sep">/</span><input type="text" maxlength="2" class="aa" placeholder="AA" value="08"><span class="sep">/</span><input type="text" maxlength="4" class="yr" placeholder="YIL" value="2026"></div><div class="cap">İmza</div><input type="text" class="name-input" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="___________" value=""><span class="paren">)</span></div></div>
-<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" placeholder="05xx xxx xx xx" value=""></div></div>
+<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" inputmode="numeric" aria-label="Dilekçe Tarihi - Gün" placeholder="GG" value=""><span class="sep">/</span><input type="text" maxlength="2" class="aa" inputmode="numeric" aria-label="Dilekçe Tarihi - Ay" placeholder="AA" value=""><span class="sep">/</span><input type="text" maxlength="4" class="yr" inputmode="numeric" aria-label="Dilekçe Tarihi - Yıl" placeholder="YIL" value=""></div><div class="cap">İmza</div><input type="text" class="name-input" aria-label="Veli Adı Soyadı" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Veli T.C. Kimlik Numarası" placeholder="___________" value=""><span class="paren">)</span></div></div>
+<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" aria-label="Adres" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" aria-label="Telefon Numarası" placeholder="05xx xxx xx xx" value=""></div></div>
 <div class="ekler"><div class="h">Ek:<span class="ek-single"></span></div>
 <div class="ek-row"><input type="checkbox" id="e1-ek1"><label for="e1-ek1">Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi</label></div>
 <div class="ek-row"><input type="checkbox" id="e1-ek2"><label for="e1-ek2">Aynı Hanede İkamet Eden Kişi Belgesi</label></div>
@@ -264,28 +330,29 @@
 <div class="school-only"><div class="h">Okul İdaresince Doldurulacaktır</div><div class="sub">Adres Doğrulama Yöntemi (e-Okul) — Uygun olan seçenek okul idaresince işaretlenecektir.</div>
 <div class="radio-row"><input type="checkbox" id="e1-d1" disabled=""><span class="rl"><label for="e1-d1">İller arası muvafakatlı adres</label> <span class="hint">(Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi ile doğrulandı)</span></span></div>
 <div class="radio-row"><input type="checkbox" id="e1-d2" disabled=""><span class="rl"><label for="e1-d2">Akraba yanında muvafakatlı adres</label> <span class="hint">(Yerleşim Yerinde Oturanlar Belgesi ve Vukuatlı Nüfus Kayıt Örneği ile doğrulandı)</span></span></div>
-<div class="radio-row"><input type="checkbox" id="e1-d3" disabled=""><span class="rl"><label for="e1-d3">Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi ile doğrulandı</label> <span class="hint">(Belgedeki taşınma tarihi <input type="text" class="inline-blank" style="width:100px" value="1 Nisan 2026"> öncesi olanlar)</span></span></div>
+<div class="radio-row"><input type="checkbox" id="e1-d3" disabled=""><span class="rl"><label for="e1-d3">Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi ile doğrulandı</label> <span class="hint">(Belgedeki taşınma tarihi <input type="text" class="inline-blank" style="width:100px" aria-label="Taşınma tarihi sınırı" value="1 Nisan 2026"> öncesi olanlar)</span></span></div>
 <div class="radio-row"><input type="checkbox" id="e1-d4" disabled=""><span class="rl"><label for="e1-d4">Elektrik faturası ile doğrulandı</label></span></div>
 <div class="radio-row"><input type="checkbox" id="e1-d5" disabled=""><span class="rl"><label for="e1-d5">Su faturası ile doğrulandı</label></span></div>
 <div class="radio-row"><input type="checkbox" id="e1-d6" disabled=""><span class="rl"><label for="e1-d6">Doğalgaz faturası ile doğrulandı</label></span></div>
-</div></div><div class="sheet" id="sheet-1"><div class="table-heading">Öğrenci Bilgileri</div>
+</div></div><div class="sheet" id="sheet-1"><div class="qr-box" title="Öğrenci T.C. Kimlik No Barkodu" aria-hidden="true"><canvas></canvas></div>
+<div class="table-heading">Öğrenci Bilgileri</div>
 <table class="idbox"><tbody>
-<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
-<tr><td class="lbl">Adı Soyadı</td><td><input type="text" placeholder="Ad Soyad" value=""></td></tr>
-<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" placeholder="Baba Adı" style="width:80px" value=""><span class="dfsep">/</span><input type="text" placeholder="Anne Adı" style="width:82px" value=""></div></td></tr>
-<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" placeholder="04" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" placeholder="06" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" placeholder="2018" value=""><span class="dash">–</span><input type="text" class="place" placeholder="Yeşilyurt" value=""></div></td></tr>
-<tr><td class="lbl" style="white-space:nowrap;">Kayıtlı Olduğu Okul</td><td><input type="text" value=""></td></tr>
-<tr><td class="lbl">Sınıfı</td><td><input type="text" value=""></td></tr>
+<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Öğrenci T.C. Kimlik Numarası" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
+<tr><td class="lbl">Adı Soyadı</td><td><input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad" value=""></td></tr>
+<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" aria-label="Baba Adı" placeholder="Baba Adı" value=""><span class="dfsep">/</span><input type="text" aria-label="Anne Adı" placeholder="Anne Adı" value=""></div></td></tr>
+<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" inputmode="numeric" aria-label="Doğum Günü" placeholder="04" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" inputmode="numeric" aria-label="Doğum Ayı" placeholder="06" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" inputmode="numeric" aria-label="Doğum Yılı" placeholder="2018" value=""><span class="dash">–</span><input type="text" class="place" aria-label="Doğum Yeri" placeholder="Yeşilyurt" value=""></div></td></tr>
+<tr><td class="lbl" style="white-space:nowrap;">Kayıtlı Olduğu Okul</td><td><input type="text" aria-label="Kayıtlı Olduğu Okul" value=""></td></tr>
+<tr><td class="lbl">Sınıfı</td><td><input type="text" aria-label="Sınıfı" value=""></td></tr>
 <tr><td class="lbl">Dilekçenin Özü</td><td class="note-cell">Öğrencimin, belirtilen gerekçeyle okulunuza nakil yoluyla kaydının yapılması talebi.</td></tr>
 </tbody></table>
-<h1 class="title" contenteditable="true" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
+<h1 class="title" contenteditable="plaintext-only" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
 <p class="body-text">Velisi bulunduğum ve bilgileri yukarıdaki tabloda yer alan öğrencim, belirtilen okulda öğrenimine devam etmektedir. Okul Öncesi Eğitim ve İlköğretim Kurumları Yönetmeliğinin 12'nci maddesi ile Adrese Dayalı Kayıt Sistemi (e-Kayıt) Usul ve Esasları doğrultusunda, aşağıda işaretlediğim gerekçeyle öğrencimin okulunuza <b>naklinin yapılmasını</b> arz ederim.</p>
 <fieldset class="gerekce-block"><legend class="gerekce-title">Nakil Gerekçesi <span class="hint">— Uygun olan seçeneği işaretleyiniz.</span><button type="button" class="clear-radio" data-group="nakil-gerekce">Seçimi kaldır</button></legend>
 <div class="radio-row"><input type="radio" name="nakil-gerekce" id="nakil-gerekce-0"><span class="rl"><label for="nakil-gerekce-0"><b>a)</b> Adresimiz okulunuz kayıt alanı içerisinde bulunmaktadır.</label> <span class="hint">(Adres doğrulamasına esas resmî belgeler ektedir.)</span></span></div>
-<div class="radio-row"><input type="radio" name="nakil-gerekce" id="nakil-gerekce-1"><span class="rl"><label for="nakil-gerekce-1"><b>b)</b> Sınıf mevcudu otuzun altında kalan okulunuza kayıt alanı dışından <b>kura yöntemiyle</b> nakil başvurusunda bulunmak istiyorum.</label> <span class="hint">(Başvuru dönemi: <input type="text" class="inline-blank" style="width:130px" value="14-18 Eylül 2026">)</span></span></div>
+<div class="radio-row"><input type="radio" name="nakil-gerekce" id="nakil-gerekce-1"><span class="rl"><label for="nakil-gerekce-1"><b>b)</b> Sınıf mevcudu otuzun altında kalan okulunuza kayıt alanı dışından <b>kura yöntemiyle</b> nakil başvurusunda bulunmak istiyorum.</label> <span class="hint">(Başvuru dönemi: <input type="text" class="inline-blank" style="width:130px" aria-label="Kura başvuru dönemi" value="14-18 Eylül 2026">)</span></span></div>
 </fieldset>
-<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" placeholder="GG" value="11"><span class="sep">/</span><input type="text" maxlength="2" class="aa" placeholder="AA" value="08"><span class="sep">/</span><input type="text" maxlength="4" class="yr" placeholder="YIL" value="2026"></div><div class="cap">İmza</div><input type="text" class="name-input" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="___________" value=""><span class="paren">)</span></div></div>
-<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" placeholder="05xx xxx xx xx" value=""></div></div>
+<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" inputmode="numeric" aria-label="Dilekçe Tarihi - Gün" placeholder="GG" value=""><span class="sep">/</span><input type="text" maxlength="2" class="aa" inputmode="numeric" aria-label="Dilekçe Tarihi - Ay" placeholder="AA" value=""><span class="sep">/</span><input type="text" maxlength="4" class="yr" inputmode="numeric" aria-label="Dilekçe Tarihi - Yıl" placeholder="YIL" value=""></div><div class="cap">İmza</div><input type="text" class="name-input" aria-label="Veli Adı Soyadı" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Veli T.C. Kimlik Numarası" placeholder="___________" value=""><span class="paren">)</span></div></div>
+<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" aria-label="Adres" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" aria-label="Telefon Numarası" placeholder="05xx xxx xx xx" value=""></div></div>
 <div class="ekler"><div class="h">Ek:<span class="ek-single"></span></div>
 <div class="ek-row"><input type="checkbox" id="e2-ek1"><label for="e2-ek1">Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi</label></div>
 <div class="ek-row"><input type="checkbox" id="e2-ek2"><label for="e2-ek2">Aynı Hanede İkamet Eden Kişi Belgesi</label></div>
@@ -297,52 +364,55 @@
 <div class="school-only"><div class="h">Okul İdaresince Doldurulacaktır</div><div class="sub">Adres Doğrulama Yöntemi (e-Okul) — Uygun olan seçenek okul idaresince işaretlenecektir.</div>
 <div class="radio-row"><input type="checkbox" id="e2-d1" disabled=""><span class="rl"><label for="e2-d1">İller arası muvafakatlı adres</label> <span class="hint">(Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi ile doğrulandı)</span></span></div>
 <div class="radio-row"><input type="checkbox" id="e2-d2" disabled=""><span class="rl"><label for="e2-d2">Akraba yanında muvafakatlı adres</label> <span class="hint">(Yerleşim Yerinde Oturanlar Belgesi ve Vukuatlı Nüfus Kayıt Örneği ile doğrulandı)</span></span></div>
-<div class="radio-row"><input type="checkbox" id="e2-d3" disabled=""><span class="rl"><label for="e2-d3">Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi ile doğrulandı</label> <span class="hint">(Belgedeki taşınma tarihi <input type="text" class="inline-blank" style="width:100px" value="1 Nisan 2026"> öncesi olanlar)</span></span></div>
+<div class="radio-row"><input type="checkbox" id="e2-d3" disabled=""><span class="rl"><label for="e2-d3">Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi ile doğrulandı</label> <span class="hint">(Belgedeki taşınma tarihi <input type="text" class="inline-blank" style="width:100px" aria-label="Taşınma tarihi sınırı" value="1 Nisan 2026"> öncesi olanlar)</span></span></div>
 <div class="radio-row"><input type="checkbox" id="e2-d4" disabled=""><span class="rl"><label for="e2-d4">Elektrik faturası ile doğrulandı</label></span></div>
 <div class="radio-row"><input type="checkbox" id="e2-d5" disabled=""><span class="rl"><label for="e2-d5">Su faturası ile doğrulandı</label></span></div>
 <div class="radio-row"><input type="checkbox" id="e2-d6" disabled=""><span class="rl"><label for="e2-d6">Doğalgaz faturası ile doğrulandı</label></span></div>
-</div></div><div class="sheet" id="sheet-2"><div class="table-heading">Öğrenci Bilgileri</div>
+</div></div><div class="sheet" id="sheet-2"><div class="qr-box" title="Öğrenci T.C. Kimlik No Barkodu" aria-hidden="true"><canvas></canvas></div>
+<div class="table-heading">Öğrenci Bilgileri</div>
 <table class="idbox"><tbody>
-<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
-<tr><td class="lbl">Adı Soyadı</td><td><input type="text" placeholder="Ad Soyad" value=""></td></tr>
-<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" placeholder="Baba Adı" style="width:80px" value=""><span class="dfsep">/</span><input type="text" placeholder="Anne Adı" style="width:82px" value=""></div></td></tr>
-<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" placeholder="29" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" placeholder="02" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" placeholder="2016" value=""><span class="dash">–</span><input type="text" class="place" placeholder="Battalgazi" value=""></div></td></tr>
+<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Öğrenci T.C. Kimlik Numarası" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
+<tr><td class="lbl">Adı Soyadı</td><td><input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad" value=""></td></tr>
+<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" aria-label="Baba Adı" placeholder="Baba Adı" value=""><span class="dfsep">/</span><input type="text" aria-label="Anne Adı" placeholder="Anne Adı" value=""></div></td></tr>
+<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" inputmode="numeric" aria-label="Doğum Günü" placeholder="29" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" inputmode="numeric" aria-label="Doğum Ayı" placeholder="02" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" inputmode="numeric" aria-label="Doğum Yılı" placeholder="2016" value=""><span class="dash">–</span><input type="text" class="place" aria-label="Doğum Yeri" placeholder="Battalgazi" value=""></div></td></tr>
 <tr><td class="lbl">Dilekçenin Özü</td><td class="note-cell">66-68 aylık çocuğumun ilkokul birinci sınıfa isteğe bağlı kaydının yapılması talebi.</td></tr>
 </tbody></table>
-<h1 class="title" contenteditable="true" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
+<h1 class="title" contenteditable="plaintext-only" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
 <p class="body-text">Velisi bulunduğum, kimlik bilgileri yukarıdaki tabloda yer alan oğlumun/kızımın; Millî Eğitim Bakanlığı Okul Öncesi Eğitim ve İlköğretim Kurumları Yönetmeliğinin 11 inci maddesinin altıncı fıkrasının (a) bendinde yer alan <b>"Ayrıca 66, 67 ve 68 aylık çocuklardan velisinin yazılı isteği bulunanlar da ilkokul birinci sınıfa kaydedilir."</b> hükmü uyarınca, okulunuz birinci sınıfına <b>isteğe bağlı kaydının yapılmasını</b> talep ediyorum. Gereğini bilgilerinize arz ederim.</p>
-<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" placeholder="GG" value="11"><span class="sep">/</span><input type="text" maxlength="2" class="aa" placeholder="AA" value="08"><span class="sep">/</span><input type="text" maxlength="4" class="yr" placeholder="YIL" value="2026"></div><div class="cap">İmza</div><input type="text" class="name-input" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="___________" value=""><span class="paren">)</span></div></div>
-<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" placeholder="05xx xxx xx xx" value=""></div></div></div><div class="sheet" id="sheet-3"><div class="table-heading">Öğrenci Bilgileri</div>
+<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" inputmode="numeric" aria-label="Dilekçe Tarihi - Gün" placeholder="GG" value=""><span class="sep">/</span><input type="text" maxlength="2" class="aa" inputmode="numeric" aria-label="Dilekçe Tarihi - Ay" placeholder="AA" value=""><span class="sep">/</span><input type="text" maxlength="4" class="yr" inputmode="numeric" aria-label="Dilekçe Tarihi - Yıl" placeholder="YIL" value=""></div><div class="cap">İmza</div><input type="text" class="name-input" aria-label="Veli Adı Soyadı" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Veli T.C. Kimlik Numarası" placeholder="___________" value=""><span class="paren">)</span></div></div>
+<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" aria-label="Adres" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" aria-label="Telefon Numarası" placeholder="05xx xxx xx xx" value=""></div></div></div><div class="sheet" id="sheet-3"><div class="qr-box" title="Öğrenci T.C. Kimlik No Barkodu" aria-hidden="true"><canvas></canvas></div>
+<div class="table-heading">Öğrenci Bilgileri</div>
 <table class="idbox"><tbody>
-<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
-<tr><td class="lbl">Adı Soyadı</td><td><input type="text" placeholder="Ad Soyad" value=""></td></tr>
-<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" placeholder="Baba Adı" style="width:80px" value=""><span class="dfsep">/</span><input type="text" placeholder="Anne Adı" style="width:82px" value=""></div></td></tr>
-<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" placeholder="04" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" placeholder="06" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" placeholder="2018" value=""><span class="dash">–</span><input type="text" class="place" placeholder="Yeşilyurt" value=""></div></td></tr>
+<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Öğrenci T.C. Kimlik Numarası" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
+<tr><td class="lbl">Adı Soyadı</td><td><input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad" value=""></td></tr>
+<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" aria-label="Baba Adı" placeholder="Baba Adı" value=""><span class="dfsep">/</span><input type="text" aria-label="Anne Adı" placeholder="Anne Adı" value=""></div></td></tr>
+<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" inputmode="numeric" aria-label="Doğum Günü" placeholder="04" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" inputmode="numeric" aria-label="Doğum Ayı" placeholder="06" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" inputmode="numeric" aria-label="Doğum Yılı" placeholder="2018" value=""><span class="dash">–</span><input type="text" class="place" aria-label="Doğum Yeri" placeholder="Yeşilyurt" value=""></div></td></tr>
 <tr><td class="lbl">Dilekçenin Özü</td><td class="note-cell">69-71 aylık çocuğumun ilkokul birinci sınıf kaydının bir yıl ertelenmesi / okul öncesi eğitime yönlendirilmesi talebi.</td></tr>
 </tbody></table>
-<h1 class="title" contenteditable="true" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
+<h1 class="title" contenteditable="plaintext-only" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
 <p class="body-text">Velisi bulunduğum, kimlik bilgileri yukarıdaki tabloda yer alan ve yaşça ilkokul birinci sınıfa kayıt hakkını elde etmiş olan oğlumun/kızımın; Millî Eğitim Bakanlığı Okul Öncesi Eğitim ve İlköğretim Kurumları Yönetmeliğinin 11 inci maddesinin altıncı fıkrasının (b) bendinde yer alan <b>"Okul müdürlükleri, yaşça kayıt hakkını elde eden çocuklardan 69, 70 ve 71 aylık olanları velisinin yazılı talebi bulunması halinde okul öncesi eğitime yönlendirir veya kayıtlarını bir yıl erteler."</b> hükmü uyarınca, aşağıda işaretlediğim talebimin değerlendirilmesini arz ederim.</p>
 <fieldset class="gerekce-block"><legend class="gerekce-title">Talep <span class="hint">— Uygun olan seçeneği işaretleyiniz.</span><button type="button" class="clear-radio" data-group="erteleme-secim">Seçimi kaldır</button></legend>
 <div class="radio-row"><input type="radio" name="erteleme-secim" id="erteleme-secim-0"><span class="rl"><label for="erteleme-secim-0"><b>a)</b> İlkokul birinci sınıf kaydının bir yıl ertelenmesini talep ediyorum.</label></span></div>
 <div class="radio-row"><input type="radio" name="erteleme-secim" id="erteleme-secim-1"><span class="rl"><label for="erteleme-secim-1"><b>b)</b> Okul öncesi eğitime yönlendirilmesini talep ediyorum.</label></span></div>
 </fieldset>
-<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" placeholder="GG" value="11"><span class="sep">/</span><input type="text" maxlength="2" class="aa" placeholder="AA" value="08"><span class="sep">/</span><input type="text" maxlength="4" class="yr" placeholder="YIL" value="2026"></div><div class="cap">İmza</div><input type="text" class="name-input" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="___________" value=""><span class="paren">)</span></div></div>
-<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" placeholder="05xx xxx xx xx" value=""></div></div></div><div class="sheet" id="sheet-4"><div class="table-heading">Öğrenci Bilgileri</div>
+<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" inputmode="numeric" aria-label="Dilekçe Tarihi - Gün" placeholder="GG" value=""><span class="sep">/</span><input type="text" maxlength="2" class="aa" inputmode="numeric" aria-label="Dilekçe Tarihi - Ay" placeholder="AA" value=""><span class="sep">/</span><input type="text" maxlength="4" class="yr" inputmode="numeric" aria-label="Dilekçe Tarihi - Yıl" placeholder="YIL" value=""></div><div class="cap">İmza</div><input type="text" class="name-input" aria-label="Veli Adı Soyadı" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Veli T.C. Kimlik Numarası" placeholder="___________" value=""><span class="paren">)</span></div></div>
+<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" aria-label="Adres" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" aria-label="Telefon Numarası" placeholder="05xx xxx xx xx" value=""></div></div></div><div class="sheet" id="sheet-4"><div class="qr-box" title="Öğrenci T.C. Kimlik No Barkodu" aria-hidden="true"><canvas></canvas></div>
+<div class="table-heading">Öğrenci Bilgileri</div>
 <table class="idbox"><tbody>
-<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
-<tr><td class="lbl">Adı Soyadı</td><td><input type="text" placeholder="Ad Soyad" value=""></td></tr>
-<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" placeholder="Baba Adı" style="width:80px" value=""><span class="dfsep">/</span><input type="text" placeholder="Anne Adı" style="width:82px" value=""></div></td></tr>
-<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" placeholder="29" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" placeholder="02" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" placeholder="2016" value=""><span class="dash">–</span><input type="text" class="place" placeholder="Battalgazi" value=""></div></td></tr>
-<tr><td class="lbl">Sınıfı / Okul Numarası</td><td><div class="dual-field"><input type="text" placeholder="Sınıfı" style="width:56px" value=""><span class="dfsep">/</span><input type="text" placeholder="Okul Numarası" style="width:118px" value=""></div></td></tr>
+<tr><td class="lbl">T.C. Kimlik Numarası</td><td><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Öğrenci T.C. Kimlik Numarası" placeholder="11 haneli T.C. Kimlik No" value=""></td></tr>
+<tr><td class="lbl">Adı Soyadı</td><td><input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad" value=""></td></tr>
+<tr><td class="lbl">Baba Adı / Anne Adı</td><td><div class="dual-field"><input type="text" aria-label="Baba Adı" placeholder="Baba Adı" value=""><span class="dfsep">/</span><input type="text" aria-label="Anne Adı" placeholder="Anne Adı" value=""></div></td></tr>
+<tr><td class="lbl">Doğum Tarihi ve Yeri</td><td><div class="dob-row"><input type="text" class="dd" maxlength="2" inputmode="numeric" aria-label="Doğum Günü" placeholder="29" value=""><span class="sep">/</span><input type="text" class="mm" maxlength="2" inputmode="numeric" aria-label="Doğum Ayı" placeholder="02" value=""><span class="sep">/</span><input type="text" class="yyyy" maxlength="4" inputmode="numeric" aria-label="Doğum Yılı" placeholder="2016" value=""><span class="dash">–</span><input type="text" class="place" aria-label="Doğum Yeri" placeholder="Battalgazi" value=""></div></td></tr>
+<tr><td class="lbl">Sınıfı / Okul Numarası</td><td><div class="dual-field"><input type="text" aria-label="Sınıfı" placeholder="Sınıfı" value=""><span class="dfsep">/</span><input type="text" aria-label="Okul Numarası" placeholder="Okul Numarası" value=""></div></td></tr>
 <tr><td class="lbl">Dilekçenin Özü</td><td class="note-cell">İstenilen yeterlilik düzeyine ulaşamadığı değerlendirilen öğrencimin sınıf tekrarı yapması talebi.</td></tr>
 </tbody></table>
-<h1 class="title" contenteditable="true" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
+<h1 class="title" contenteditable="plaintext-only" spellcheck="false">ŞEHİT ORHAN ÜNSAL İLKOKULU MÜDÜRLÜĞÜNE</h1>
 <p class="body-text">Velisi bulunduğum, kimlik ve öğrenim bilgileri yukarıdaki tabloda yer alan okulunuz öğrencisinin öğrenim durumu hakkında okul müdürlüğünüzce mayıs ayında tarafıma yapılan bilgilendirme değerlendirilmiştir.</p>
 <p class="body-text">26/7/2014 tarihli ve 29072 sayılı Resmî Gazete'de yayımlanan Millî Eğitim Bakanlığı Okul Öncesi Eğitim ve İlköğretim Kurumları Yönetmeliği'nin, 17/1/2025 tarihli ve 32785 sayılı Resmî Gazete'de yayımlanan değişiklikle güncellenen 31 inci maddesinin birinci fıkrası uyarınca, istenilen yeterlilik düzeyine ulaşamadığı değerlendirilen öğrencimin <b>sınıf tekrarı yapmasını</b> talep ediyorum.</p>
 <p class="body-text">Sınıf tekrarının, ilkokul öğrenimi süresince yalnızca bir defa yapılabileceği hususunda bilgilendirildiğimi beyan ederim.</p>
 <p class="body-text">Gereğini bilgilerinize arz ederim.</p>
-<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" placeholder="GG" value="11"><span class="sep">/</span><input type="text" maxlength="2" class="aa" placeholder="AA" value="08"><span class="sep">/</span><input type="text" maxlength="4" class="yr" placeholder="YIL" value="2026"></div><div class="cap">İmza</div><input type="text" class="name-input" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="___________" value=""><span class="paren">)</span></div></div>
-<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" placeholder="05xx xxx xx xx" value=""></div></div></div></div>
+<div class="signblock"><div class="date-fields"><input type="text" maxlength="2" class="gg" inputmode="numeric" aria-label="Dilekçe Tarihi - Gün" placeholder="GG" value=""><span class="sep">/</span><input type="text" maxlength="2" class="aa" inputmode="numeric" aria-label="Dilekçe Tarihi - Ay" placeholder="AA" value=""><span class="sep">/</span><input type="text" maxlength="4" class="yr" inputmode="numeric" aria-label="Dilekçe Tarihi - Yıl" placeholder="YIL" value=""></div><div class="cap">İmza</div><input type="text" class="name-input" aria-label="Veli Adı Soyadı" placeholder="Veli Adı Soyadı" value=""><div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span><input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Veli T.C. Kimlik Numarası" placeholder="___________" value=""><span class="paren">)</span></div></div>
+<div class="contact-lines"><div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" aria-label="Adres" value=""></div><div class="cline"><span class="clbl">Tel</span><span class="colon">:</span><input type="text" class="tel-no" inputmode="numeric" aria-label="Telefon Numarası" placeholder="05xx xxx xx xx" value=""></div></div></div></div>
 
 <div class="app-footer">Mehmet IŞIK tarafından hazırlanmıştır.</div>
 
@@ -374,7 +444,7 @@ const DOGRULAMA_LISTESI = [
   {t:'İller arası muvafakatlı adres', h:'(Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi ile doğrulandı)'},
   {t:'Akraba yanında muvafakatlı adres', h:'(Yerleşim Yerinde Oturanlar Belgesi ve Vukuatlı Nüfus Kayıt Örneği ile doğrulandı)'},
   {t:'Tarihçeli Yerleşim Yeri ve Diğer Adres Belgesi ile doğrulandı',
-   h:'(Belgedeki taşınma tarihi <input type="text" class="inline-blank" style="width:100px" value="'+AYARLAR.tasinmaTarihi+'"> öncesi olanlar)'},
+   h:'(Belgedeki taşınma tarihi <input type="text" class="inline-blank" style="width:100px" aria-label="Taşınma tarihi sınırı" value="'+AYARLAR.tasinmaTarihi+'"> öncesi olanlar)'},
   {t:'Elektrik faturası ile doğrulandı'},
   {t:'Su faturası ile doğrulandı'},
   {t:'Doğalgaz faturası ile doğrulandı'}
@@ -384,21 +454,21 @@ const DOGRULAMA_LISTESI = [
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
 function inpTC(){
-  return '<input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="11 haneli T.C. Kimlik No">';
+  return '<input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Öğrenci T.C. Kimlik Numarası" placeholder="11 haneli T.C. Kimlik No">';
 }
 function inpDual(p1, w1, p2, w2){
   return '<div class="dual-field">'
-       + '<input type="text" placeholder="'+esc(p1)+'" style="width:'+w1+'px">'
+       + '<input type="text" aria-label="'+esc(p1)+'" placeholder="'+esc(p1)+'" style="width:'+w1+'px">'
        + '<span class="dfsep">/</span>'
-       + '<input type="text" placeholder="'+esc(p2)+'" style="width:'+w2+'px">'
+       + '<input type="text" aria-label="'+esc(p2)+'" placeholder="'+esc(p2)+'" style="width:'+w2+'px">'
        + '</div>';
 }
 function inpDogum(gg, aa, yyyy, yer){
   return '<div class="dob-row">'
-       + '<input type="text" class="dd" maxlength="2" placeholder="'+gg+'"><span class="sep">/</span>'
-       + '<input type="text" class="mm" maxlength="2" placeholder="'+aa+'"><span class="sep">/</span>'
-       + '<input type="text" class="yyyy" maxlength="4" placeholder="'+yyyy+'"><span class="dash">–</span>'
-       + '<input type="text" class="place" placeholder="'+esc(yer)+'">'
+       + '<input type="text" class="dd" maxlength="2" inputmode="numeric" aria-label="Doğum Günü" placeholder="'+gg+'"><span class="sep">/</span>'
+       + '<input type="text" class="mm" maxlength="2" inputmode="numeric" aria-label="Doğum Ayı" placeholder="'+aa+'"><span class="sep">/</span>'
+       + '<input type="text" class="yyyy" maxlength="4" inputmode="numeric" aria-label="Doğum Yılı" placeholder="'+yyyy+'"><span class="dash">–</span>'
+       + '<input type="text" class="place" aria-label="Doğum Yeri" placeholder="'+esc(yer)+'">'
        + '</div>';
 }
 
@@ -409,12 +479,12 @@ function blokTablo(satirlar){
     const style = s.nowrap ? ' style="white-space:nowrap;"' : '';
     return '<tr><td class="lbl"'+style+'>'+s.lbl+'</td><td>'+s.alan+'</td></tr>';
   }).join('\n');
-  return '<div class="table-heading">Öğrenci Bilgileri</div>\n<table class="idbox"><tbody>\n'+tr+'\n</tbody></table>';
+  return '<div class="qr-box" title="Öğrenci T.C. Kimlik No Barkodu" aria-hidden="true"><canvas></canvas></div>\n<div class="table-heading">Öğrenci Bilgileri</div>\n<table class="idbox"><tbody>\n'+tr+'\n</tbody></table>';
 }
 
 /* Başlık (okul adı) */
 function blokBaslik(){
-  return '<h1 class="title" contenteditable="true" spellcheck="false">'+esc(AYARLAR.okulAdi)+'</h1>';
+  return '<h1 class="title" contenteditable="plaintext-only" spellcheck="false">'+esc(AYARLAR.okulAdi)+'</h1>';
 }
 
 /* Gerekçe / talep seçenekleri — metin kutuları <label> DIŞINDA tutulur (bkz. madde 6) */
@@ -437,22 +507,22 @@ function blokSecim(baslik, grup, secenekler){
 function blokImza(){
   return '<div class="signblock">'
        + '<div class="date-fields">'
-       + '<input type="text" maxlength="2" class="gg" placeholder="GG"><span class="sep">/</span>'
-       + '<input type="text" maxlength="2" class="aa" placeholder="AA"><span class="sep">/</span>'
-       + '<input type="text" maxlength="4" class="yr" placeholder="YIL"></div>'
+       + '<input type="text" maxlength="2" class="gg" inputmode="numeric" aria-label="Dilekçe Tarihi - Gün" placeholder="GG"><span class="sep">/</span>'
+       + '<input type="text" maxlength="2" class="aa" inputmode="numeric" aria-label="Dilekçe Tarihi - Ay" placeholder="AA"><span class="sep">/</span>'
+       + '<input type="text" maxlength="4" class="yr" inputmode="numeric" aria-label="Dilekçe Tarihi - Yıl" placeholder="YIL"></div>'
        + '<div class="cap">İmza</div>'
-       + '<input type="text" class="name-input" placeholder="Veli Adı Soyadı">'
+       + '<input type="text" class="name-input" aria-label="Veli Adı Soyadı" placeholder="Veli Adı Soyadı">'
        + '<div class="tc-line"><span class="paren">(</span><span class="tc-lbl">T.C. Kimlik No:</span>'
-       + '<input type="text" class="tc-no" maxlength="11" inputmode="numeric" placeholder="___________">'
+       + '<input type="text" class="tc-no" maxlength="11" inputmode="numeric" aria-label="Veli T.C. Kimlik Numarası" placeholder="___________">'
        + '<span class="paren">)</span></div></div>';
 }
 
 /* Adres / telefon */
 function blokIletisim(){
   return '<div class="contact-lines">'
-       + '<div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text"></div>'
+       + '<div class="cline"><span class="clbl">Adres</span><span class="colon">:</span><input type="text" aria-label="Adres"></div>'
        + '<div class="cline"><span class="clbl">Tel</span><span class="colon">:</span>'
-       + '<input type="text" class="tel-no" inputmode="numeric" placeholder="05xx xxx xx xx"></div></div>';
+       + '<input type="text" class="tel-no" inputmode="numeric" aria-label="Telefon Numarası" placeholder="05xx xxx xx xx"></div></div>';
 }
 
 /* Ekler */
@@ -485,10 +555,10 @@ const DILEKCELER = [
   sekme:'Kayıt Dilekçesi', pre:'e1',
   tablo:[
     {lbl:'T.C. Kimlik Numarası', alan:inpTC()},
-    {lbl:'Adı Soyadı', alan:'<input type="text" placeholder="Ad Soyad">'},
+    {lbl:'Adı Soyadı', alan:'<input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad">'},
     {lbl:'Baba Adı / Anne Adı', alan:inpDual('Baba Adı',80,'Anne Adı',82)},
     {lbl:'Doğum Tarihi ve Yeri', alan:inpDogum('29','02','2016','Battalgazi')},
-    {lbl:'Sınıfı / Kademesi', alan:'<input type="text" placeholder="Örn: 1. Sınıf">'},
+    {lbl:'Sınıfı / Kademesi', alan:'<input type="text" aria-label="Sınıfı / Kademesi" placeholder="Örn: 1. Sınıf">'},
     {not:'Öğrencimin, adres doğrulama süreci sonucunda okulunuza kesin kaydının yapılması talebi.'}
   ],
   govde:['Velisi bulunduğum ve kimlik bilgileri yukarıdaki tabloda yer alan öğrencimin, MERNİS kayıtlarında yerleşim yeri adresi birlikte oturma gerekçesiyle (muvafakatle) oluşmuş olup Adrese Dayalı Kayıt Sistemi (e-Kayıt) Usul ve Esaslarının 3\'üncü maddesi gereğince <b>"Adres Doğrulama Süreci"</b> kapsamına alınmıştır. Adres doğrulamasına esas resmî belgeler ekte sunulmuş olup adresimizde fiilen oturduğumuzun teyidi ile öğrencimin okulunuza <b>kesin kaydının yapılmasını</b> arz ederim.'],
@@ -498,11 +568,11 @@ const DILEKCELER = [
   sekme:'Nakil Dilekçesi', pre:'e2',
   tablo:[
     {lbl:'T.C. Kimlik Numarası', alan:inpTC()},
-    {lbl:'Adı Soyadı', alan:'<input type="text" placeholder="Ad Soyad">'},
+    {lbl:'Adı Soyadı', alan:'<input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad">'},
     {lbl:'Baba Adı / Anne Adı', alan:inpDual('Baba Adı',80,'Anne Adı',82)},
     {lbl:'Doğum Tarihi ve Yeri', alan:inpDogum('04','06','2018','Yeşilyurt')},
-    {lbl:'Kayıtlı Olduğu Okul', alan:'<input type="text">', nowrap:true},
-    {lbl:'Sınıfı', alan:'<input type="text">'},
+    {lbl:'Kayıtlı Olduğu Okul', alan:'<input type="text" aria-label="Kayıtlı Olduğu Okul">', nowrap:true},
+    {lbl:'Sınıfı', alan:'<input type="text" aria-label="Sınıfı">'},
     {not:'Öğrencimin, belirtilen gerekçeyle okulunuza nakil yoluyla kaydının yapılması talebi.'}
   ],
   govde:['Velisi bulunduğum ve bilgileri yukarıdaki tabloda yer alan öğrencim, belirtilen okulda öğrenimine devam etmektedir. Okul Öncesi Eğitim ve İlköğretim Kurumları Yönetmeliğinin 12\'nci maddesi ile Adrese Dayalı Kayıt Sistemi (e-Kayıt) Usul ve Esasları doğrultusunda, aşağıda işaretlediğim gerekçeyle öğrencimin okulunuza <b>naklinin yapılmasını</b> arz ederim.'],
@@ -512,7 +582,7 @@ const DILEKCELER = [
       {metin:'<b>a)</b> Adresimiz okulunuz kayıt alanı içerisinde bulunmaktadır.',
        hint:'(Adres doğrulamasına esas resmî belgeler ektedir.)'},
       {metin:'<b>b)</b> Sınıf mevcudu otuzun altında kalan okulunuza kayıt alanı dışından <b>kura yöntemiyle</b> nakil başvurusunda bulunmak istiyorum.',
-       hint:'(Başvuru dönemi: <input type="text" class="inline-blank" style="width:130px" value="'+AYARLAR.kuraDonemi+'">)'}
+       hint:'(Başvuru dönemi: <input type="text" class="inline-blank" style="width:130px" aria-label="Kura başvuru dönemi" value="'+AYARLAR.kuraDonemi+'">)'}
     ]
   },
   ekler:true, okulIdaresi:true
@@ -521,7 +591,7 @@ const DILEKCELER = [
   sekme:'İsteğe Bağlı Kayıt', pre:'e3',
   tablo:[
     {lbl:'T.C. Kimlik Numarası', alan:inpTC()},
-    {lbl:'Adı Soyadı', alan:'<input type="text" placeholder="Ad Soyad">'},
+    {lbl:'Adı Soyadı', alan:'<input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad">'},
     {lbl:'Baba Adı / Anne Adı', alan:inpDual('Baba Adı',80,'Anne Adı',82)},
     {lbl:'Doğum Tarihi ve Yeri', alan:inpDogum('29','02','2016','Battalgazi')},
     {not:'66-68 aylık çocuğumun ilkokul birinci sınıfa isteğe bağlı kaydının yapılması talebi.'}
@@ -532,7 +602,7 @@ const DILEKCELER = [
   sekme:'Kayıt Erteleme', pre:'e4',
   tablo:[
     {lbl:'T.C. Kimlik Numarası', alan:inpTC()},
-    {lbl:'Adı Soyadı', alan:'<input type="text" placeholder="Ad Soyad">'},
+    {lbl:'Adı Soyadı', alan:'<input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad">'},
     {lbl:'Baba Adı / Anne Adı', alan:inpDual('Baba Adı',80,'Anne Adı',82)},
     {lbl:'Doğum Tarihi ve Yeri', alan:inpDogum('04','06','2018','Yeşilyurt')},
     {not:'69-71 aylık çocuğumun ilkokul birinci sınıf kaydının bir yıl ertelenmesi / okul öncesi eğitime yönlendirilmesi talebi.'}
@@ -550,7 +620,7 @@ const DILEKCELER = [
   sekme:'Sınıf Tekrarı', pre:'e5',
   tablo:[
     {lbl:'T.C. Kimlik Numarası', alan:inpTC()},
-    {lbl:'Adı Soyadı', alan:'<input type="text" placeholder="Ad Soyad">'},
+    {lbl:'Adı Soyadı', alan:'<input type="text" aria-label="Öğrenci Adı Soyadı" placeholder="Ad Soyad">'},
     {lbl:'Baba Adı / Anne Adı', alan:inpDual('Baba Adı',80,'Anne Adı',82)},
     {lbl:'Doğum Tarihi ve Yeri', alan:inpDogum('29','02','2016','Battalgazi')},
     {lbl:'Sınıfı / Okul Numarası', alan:inpDual('Sınıfı',56,'Okul Numarası',118)},
@@ -611,21 +681,39 @@ function buildAll(){
   if(f) f.textContent = AYARLAR.hazirlayan + ' tarafından hazırlanmıştır.';
 }
 buildAll();
-if(typeof syncPrintReadiness === 'function'){
-  // Sayfa ilk açıldığında (özellikle önceden kaydedilmiş, kutuları işaretli
-  // bir dosya tekrar açıldığında) aktif sayfanın durumunu baştan hesapla.
-  syncPrintReadiness();
+if(typeof syncEklerState === 'function'){
+  // Sayfa ilk açıldığında (önceden kaydedilmiş, kutuları işaretli bir dosya
+  // tekrar açıldığında) Ekler durumunu baştan hesapla. Sayfa sığdırma kararı
+  // (adjustSheetFit) burada YOK — o yalnızca gerçek yazdırma anında hesaplanır.
+  syncEklerState();
 }
 
 function showSheet(i){
   document.querySelectorAll('.sheet').forEach((s,idx)=>s.classList.toggle('active', idx===i));
   document.querySelectorAll('.tab-btn').forEach((b,idx)=>b.classList.toggle('active', idx===i));
-  if(typeof syncPrintReadiness === 'function') syncPrintReadiness();
+  if(typeof syncEklerState === 'function') syncEklerState();
 }
 
 /* ============================================================================
    5) DAVRANIŞLAR
    ========================================================================= */
+
+/* --- Tema Yönetimi ----------------------------------------------------- */
+function initTheme(){
+  const selector = document.getElementById('themeSelector');
+  if(!selector) return;
+
+  // Tarayıcı hafızası (localStorage) yerine, sayfa yüklendiğinde
+  // HTML'e önceden kaydedilmiş bir tema varsa onu kullanırız, yoksa varsayılanı.
+  if(!document.documentElement.hasAttribute('data-theme')) {
+    document.documentElement.setAttribute('data-theme', selector.value);
+  }
+
+  selector.addEventListener('change', (e) => {
+    document.documentElement.setAttribute('data-theme', e.target.value);
+  });
+}
+initTheme();
 
 /* --- Baba/Anne adı alanlarının otomatik genişlemesi (madde 4: id yerine
        modül değişkeni; DOM'da kalıcı iz bırakmaz) ------------------------- */
@@ -655,7 +743,7 @@ initDualFieldAutosize();
 
 /* --- Okul adı (madde 2 + 3: imleç korunur, localStorage kullanılmaz) ------ */
 function initSchoolName(){
-  const titles = document.querySelectorAll('h1.title[contenteditable="true"]');
+  const titles = document.querySelectorAll('h1.title[contenteditable]');
   const nameInput = document.getElementById('schoolNameInput');
   if(!titles.length || !nameInput) return;
 
@@ -671,6 +759,28 @@ function initSchoolName(){
     el.addEventListener('input', () => {
       nameInput.value = el.textContent;
       applyName(el.textContent, el);
+    });
+    // madde 7: contenteditable="plaintext-only" desteklemeyen tarayıcılarda da
+    // (Firefox) biçimli metnin HTML olarak girmesini engelle — yapıştırma daima
+    // düz metne indirgenir; aksi halde <span style="..."> düğümleri kaydedilen
+    // dosyaya sızar.
+    el.addEventListener('paste', e => {
+      e.preventDefault();
+      const pano = (e.clipboardData || window.clipboardData);
+      const metin = pano ? pano.getData('text/plain') : '';
+      const duzMetin = metin.replace(/\s+/g,' ').trim();
+      if(document.execCommand){
+        document.execCommand('insertText', false, duzMetin);
+      } else {
+        const sec = window.getSelection();
+        if(sec && sec.rangeCount){
+          const r = sec.getRangeAt(0);
+          r.deleteContents();
+          r.insertNode(document.createTextNode(duzMetin));
+          sec.collapseToEnd();
+        }
+      }
+      el.dispatchEvent(new Event('input'));
     });
   });
 }
@@ -695,14 +805,38 @@ function initTCValidation(){
       const after = before.replace(/[^0-9]/g,'').slice(0,11);
       if(after !== before){
         el.value = after;
-        const kaldirilan = before.slice(0, pos).replace(/[0-9]/g,'').length;
-        try{ el.setSelectionRange(pos - kaldirilan, pos - kaldirilan); }catch(e){}
+        // madde 8: temizlenen karakterlerin YANI SIRA 11 haneye kırpmanın da
+        // hesaba katılması gerekir; aksi halde uzun bir metin yapıştırıldığında
+        // imleç metnin dışına taşar. Alan artık yalnızca rakamlardan oluştuğu
+        // için doğru konum = soldaki rakam sayısı (uzunlukla sınırlanmış).
+        const yeniPos = Math.min(before.slice(0, pos).replace(/[^0-9]/g,'').length, after.length);
+        try{ el.setSelectionRange(yeniPos, yeniPos); }catch(e){}
       }
-      el.classList.toggle('tc-invalid', el.value.length === 11 && !isValidTCNo(el.value));
+      const gecersiz = el.value.length === 11 && !isValidTCNo(el.value);
+      el.classList.toggle('tc-invalid', gecersiz);
+      el.setAttribute('aria-invalid', gecersiz ? 'true' : 'false');
+      // Tarih alanlarındaki davranışla tutarlı: 11 hane tamamlanıp geçerliyse
+      // (ve odak hâlâ bu alandaysa) bir sonraki alana otomatik geç.
+      if(el.value.length === 11 && !gecersiz && document.activeElement === el){
+        odaklanSonrakiAlana(el);
+      }
     });
   });
 }
 initTCValidation();
+
+/* Aynı .sheet içindeki bir sonraki metin alanına odaklan (TC no otomatik geçiş için) */
+function odaklanSonrakiAlana(el){
+  const sheet = el.closest('.sheet');
+  if(!sheet) return;
+  const alanlar = Array.from(sheet.querySelectorAll('input[type=text]:not([disabled])'));
+  const idx = alanlar.indexOf(el);
+  if(idx > -1 && idx < alanlar.length - 1){
+    const sonraki = alanlar[idx+1];
+    sonraki.focus();
+    try{ sonraki.select(); }catch(e){}
+  }
+}
 
 /* --- Telefon (madde 7: imleç korunur + 05 kontrolü) --------------------- */
 function formatPhoneNumber(digits){
@@ -714,29 +848,118 @@ function formatPhoneNumber(digits){
   if(digits.length > 9) parts.push(digits.slice(9, 11));
   return parts.join(' ');
 }
+/* İmleci, solunda tam olarak "rakamSolda" adet rakam kalacak şekilde konumlar */
+function telImlecKonumla(el, rakamSolda){
+  let sayac = 0, yeniPos = el.value.length;
+  for(let i = 0; i < el.value.length; i++){
+    if(sayac === rakamSolda){ yeniPos = i; break; }
+    if(/[0-9]/.test(el.value[i])) sayac++;
+  }
+  try{ el.setSelectionRange(yeniPos, yeniPos); }catch(e){}
+}
+function telDogrula(el){
+  const d = el.value.replace(/[^0-9]/g,'');
+  const gecersiz = d.length === 11 && !d.startsWith('05');
+  el.classList.toggle('tel-invalid', gecersiz);
+  el.setAttribute('aria-invalid', gecersiz ? 'true' : 'false');
+}
 function initPhoneFormatting(){
   document.querySelectorAll('input.tel-no').forEach(el=>{
+    // madde 5: imleç bir BOŞLUĞUN sağındayken Backspace'e basıldığında yalnızca
+    // ayırıcı silinir, rakamlar değişmez; biçimlendirme aynı metni yeniden
+    // üretir ve alan "kilitli" hissi verir. Bu durumda ayırıcıyı atlayıp
+    // solundaki gerçek rakamı sileriz.
+    el.addEventListener('keydown', e=>{
+      if(e.key !== 'Backspace') return;
+      if(el.selectionStart !== el.selectionEnd) return;      // seçim varsa normal davranış
+      const p = el.selectionStart;
+      if(p === 0) return;
+      if(/[0-9]/.test(el.value[p-1])) return;                // solunda rakam varsa normal davranış
+
+      e.preventDefault();
+      // İmlecin solundaki en yakın rakamı bul
+      let i = p - 1;
+      while(i >= 0 && !/[0-9]/.test(el.value[i])) i--;
+      if(i < 0) return;
+
+      const digits = el.value.replace(/[^0-9]/g,'');
+      const sira = el.value.slice(0, i+1).replace(/[^0-9]/g,'').length;  // silinecek rakamın sırası (1 tabanlı)
+      const kalan = digits.slice(0, sira-1) + digits.slice(sira);
+      el.value = formatPhoneNumber(kalan);
+      telImlecKonumla(el, sira-1);
+      telDogrula(el);
+    });
+
     el.addEventListener('input', ()=>{
       // İmlecin solundaki rakam sayısını sayarak konumu koruyoruz
       const pos = el.selectionStart;
       const rakamSolda = el.value.slice(0, pos).replace(/[^0-9]/g,'').length;
       const digits = el.value.replace(/[^0-9]/g,'');
       el.value = formatPhoneNumber(digits);
-
-      let sayac = 0, yeniPos = el.value.length;
-      for(let i = 0; i < el.value.length; i++){
-        if(sayac === rakamSolda){ yeniPos = i; break; }
-        if(/[0-9]/.test(el.value[i])) sayac++;
-      }
-      if(sayac === rakamSolda && yeniPos === el.value.length) yeniPos = el.value.length;
-      try{ el.setSelectionRange(yeniPos, yeniPos); }catch(e){}
-
-      const d = el.value.replace(/[^0-9]/g,'');
-      el.classList.toggle('tel-invalid', d.length === 11 && !d.startsWith('05'));
+      telImlecKonumla(el, rakamSolda);
+      telDogrula(el);
     });
   });
 }
 initPhoneFormatting();
+
+/* --- Tarih alanları: rakam filtresi + aralık denetimi + otomatik geçiş
+       (madde 13). Alan dolduğunda ve geçerliyse imleç bir sonraki alana
+       geçer; aralık dışı değerler (ör. 32/13) açık pembe ile işaretlenir,
+       yazdırmada bu renklendirme görünmez. ------------------------------ */
+const TARIH_GRUPLARI = [
+  {kap:'.date-fields', alanlar:[
+    {sec:'.gg',   len:2, min:1,    max:31},
+    {sec:'.aa',   len:2, min:1,    max:12},
+    {sec:'.yr',   len:4, min:1900, max:2100}
+  ]},
+  {kap:'.dob-row', alanlar:[
+    {sec:'.dd',   len:2, min:1,    max:31},
+    {sec:'.mm',   len:2, min:1,    max:12},
+    {sec:'.yyyy', len:4, min:1900, max:2100}
+  ]}
+];
+function tarihAlaniGecerli(deger, tanim){
+  if(deger.length !== tanim.len) return false;
+  const n = parseInt(deger, 10);
+  return !isNaN(n) && n >= tanim.min && n <= tanim.max;
+}
+function dogrulaTarihAlani(el, tanim){
+  // Boş veya henüz yarım girilmiş alan "geçersiz" sayılmaz; yalnızca tam
+  // uzunlukta olup aralık dışı kalan değer işaretlenir.
+  const gecersiz = el.value.length === tanim.len && !tarihAlaniGecerli(el.value, tanim);
+  el.classList.toggle('date-invalid', gecersiz);
+  el.setAttribute('aria-invalid', gecersiz ? 'true' : 'false');
+}
+function initDateFields(){
+  TARIH_GRUPLARI.forEach(grup=>{
+    document.querySelectorAll(grup.kap).forEach(kapsayici=>{
+      const inputlar = grup.alanlar.map(a=>kapsayici.querySelector(a.sec));
+      inputlar.forEach((el, i)=>{
+        if(!el) return;
+        const tanim = grup.alanlar[i];
+        el.addEventListener('input', ()=>{
+          const pos = el.selectionStart;
+          const before = el.value;
+          const after = before.replace(/[^0-9]/g,'').slice(0, tanim.len);
+          if(after !== before){
+            el.value = after;
+            const yeniPos = Math.min(before.slice(0, pos).replace(/[^0-9]/g,'').length, after.length);
+            try{ el.setSelectionRange(yeniPos, yeniPos); }catch(e){}
+          }
+          dogrulaTarihAlani(el, tanim);
+          // Alan dolduysa ve geçerliyse bir sonraki alana geç
+          if(tarihAlaniGecerli(el.value, tanim) && document.activeElement === el){
+            const sonraki = inputlar[i+1];
+            if(sonraki){ sonraki.focus(); try{ sonraki.select(); }catch(e){} }
+          }
+        });
+        el.addEventListener('blur', ()=>dogrulaTarihAlani(el, tanim));
+      });
+    });
+  });
+}
+initDateFields();
 
 /* --- Radyo seçimini kaldırma (madde 8) ---------------------------------- */
 function initRadioClear(){
@@ -744,14 +967,25 @@ function initRadioClear(){
     btn.addEventListener('click', ()=>{
       const grup = btn.getAttribute('data-group');
       document.querySelectorAll('input[name="'+grup+'"]').forEach(r=>r.checked=false);
+      oncekiSecim.delete(grup);
     });
   });
-  // Seçili bir şıkka tekrar tıklanırsa seçim kalksın
+  // Seçili bir şıkka tekrar tıklanırsa seçim kalksın.
+  // Durum DOM'da (dataset) DEĞİL, modül içi Map'te tutulur: hem <label>
+  // tıklamalarında da doğru çalışır (mousedown input'a gelmez), hem de
+  // kaydedilen dosyaya data-* niteliği sızmaz.
   document.querySelectorAll('.radio-row input[type=radio]').forEach(r=>{
-    r.addEventListener('mousedown', ()=>{ r.dataset.wasChecked = r.checked ? '1' : '0'; });
-    r.addEventListener('click', ()=>{ if(r.dataset.wasChecked === '1') r.checked = false; });
+    r.addEventListener('click', ()=>{
+      if(oncekiSecim.get(r.name) === r){
+        r.checked = false;
+        oncekiSecim.delete(r.name);
+      } else {
+        oncekiSecim.set(r.name, r);
+      }
+    });
   });
 }
+const oncekiSecim = new Map();   // grup adı -> o an seçili radyo düğmesi
 initRadioClear();
 
 /* --- Tarih ------------------------------------------------------------- */
@@ -769,17 +1003,17 @@ function setTodayDate(kapsam){
 }
 setTodayDate();
 
-/* --- EKLER görünümü ve sayfa sığdırma: her zaman güncel tutulur ---------
-   Önceki sürüm bu kararı yalnızca 'beforeprint' anında veriyordu. Bazı
-   Safari sürümlerinde beforeprint sırasında yapılan DOM değişiklikleri ilk
-   yazdırma denemesine yansımayabiliyor (kullanıcı ikinci kez yazdırınca
-   düzeliyor). Bunu tamamen ortadan kaldırmak için karar; kullanıcı bir Ek
-   kutusunu işaretlediği/kaldırdığı ya da sekme değiştirdiği anda önceden
-   veriliyor. Yazdırma anına geldiğinde DOM zaten doğru haldedir; beforeprint/
-   matchMedia dinleyicileri yalnızca son bir güvenlik kontrolü olarak kalır.
-   Not: Bu sınıfların hepsi (ekler-empty, ekler-single, print-show,
-   sheet-compact) yalnızca @media print kuralları içinde etkilidir, bu yüzden
-   ekran görünümünü hiçbir zaman etkilemezler — istediğimiz an hesaplanabilir. */
+/* --- EKLER görünümü ve sayfa sığdırma -----------------------------------
+   prepareEkler() saf veriye (checkbox işaretli mi) dayandığı için ekranda
+   erkenden/her an çalıştırılması güvenlidir.
+   adjustSheetFit() ise .sheet'in GERÇEK render yüksekliğini A4 ile
+   kıyaslar; bu kıyas yalnızca @media print kuralları fiilen devredeyken
+   (beforeprint / matchMedia('print') anında) anlamlıdır. Ekranda .sheet
+   tamamen farklı ölçülerle (max-width:850px, farklı yazı boyutları) render
+   edildiği için aynı A4/297mm eşiğiyle karşılaştırmak yanlış sonuç verir
+   ve gereksiz yere 'sheet-compact' ekleyebilir — dosya "Kaydet"le
+   kaydedildiğinde bu yanlış karar da donarak kalır. Bu yüzden
+   adjustSheetFit() SADECE gerçek yazdırma anında çağrılır. */
 function prepareEkler(){
   document.querySelectorAll('.ekler').forEach(container=>{
     const rows = Array.from(container.querySelectorAll('.ek-row'));
@@ -799,30 +1033,48 @@ function prepareEkler(){
   });
 }
 
-function mmToPx(){
-  const probe = document.createElement('div');
-  probe.style.cssText = 'position:absolute;visibility:hidden;height:100mm;width:0;top:-99999px;';
-  document.body.appendChild(probe);
-  const ratio = probe.offsetHeight / 100;
-  probe.remove();
-  return ratio || (96/25.4); // ölçüm başarısızsa 96dpi varsayımına düş
-}
+const SHEET_COMPACT_LEVELS = ['sheet-compact-1', 'sheet-compact-2', 'sheet-compact-3'];
+
 function adjustSheetFit(){
   const sheet = document.querySelector('.sheet.active');
   if(!sheet) return;
-  const pxPerMm = mmToPx();
-  const SAYFA_YUKSEKLIGI_MM = 297;   // A4
-  const GUVENLIK_PAYI_MM   = 4;      // yazıcı/DPI yuvarlama toleransı
-  const limitPx = (SAYFA_YUKSEKLIGI_MM - GUVENLIK_PAYI_MM) * pxPerMm;
 
-  sheet.classList.remove('sheet-compact');
-  void sheet.offsetHeight; // reflow'u zorla, doğru ölçüm al
-  if(sheet.scrollHeight > limitPx){
-    sheet.classList.add('sheet-compact');
+  // Önce mevcut sıkıştırma sınıflarını temizle
+  SHEET_COMPACT_LEVELS.forEach(cls => sheet.classList.remove(cls));
+
+  // Hangi dilekçede olduğumuzu alalım (sheet-0: Kayıt, sheet-1: Nakil)
+  const sheetId = sheet.id;
+
+  // Formda o an kaç tane "Ek" işaretlendiğini say
+  const checkedCount = sheet.querySelectorAll('.ekler .ek-row input[type=checkbox]:checked').length;
+
+  if (sheetId === 'sheet-1') {
+    // NAKİL DİLEKÇESİ: Gerekçe bloğu nedeniyle sayfa daha uzun.
+    // 4 ekten sonra taşma yaptığı için sadece 5 ve 6 ek durumunda daraltma uygulanır.
+    if (checkedCount === 6) {
+      sheet.classList.add('sheet-compact-3');
+    } else if (checkedCount === 5) {
+      sheet.classList.add('sheet-compact-2');
+    }
+    // 4 ve altı ekte hiçbir daraltma uygulanmaz, ferah bırakılır.
+    
+  } else if (sheetId === 'sheet-0') {
+    // KAYIT DİLEKÇESİ: Gerekçe bloğu olmadığı için sayfa daha kısa.
+    // 6 ek seçilse dahi sığabildiği için hiçbir sıkıştırma (compact) sınıfı eklenmez.
+    // Tarayıcı render farklarına karşı güvenlik payı isterseniz:
+    // if (checkedCount === 6) sheet.classList.add('sheet-compact-1'); 
+    // şeklinde sadece 6. ekte en hafif kademeyi açabilirsiniz. Şu an tamamen serbest.
   }
+  
+  // Diğer dilekçelerde (sheet-2, sheet-3, sheet-4) idare tablosu ve çoklu ek 
+  // bulunmadığı için zaten sığma problemi yoktur, işlem pas geçilir.
 }
 
-/* Ekler durumu + sığdırma kararını birlikte günceller */
+/* Ekranda güvenle her an çağrılabilir: sadece veri bazlı Ekler durumunu günceller */
+function syncEklerState(){
+  prepareEkler();
+}
+/* Sadece gerçek yazdırma bağlamında çağrılır: Ekler durumu + sayfa sığdırma */
 function syncPrintReadiness(){
   prepareEkler();
   adjustSheetFit();
@@ -830,12 +1082,13 @@ function syncPrintReadiness(){
 
 function initEklerAutoSync(){
   document.querySelectorAll('.ekler input[type=checkbox]').forEach(cb=>{
-    cb.addEventListener('change', syncPrintReadiness);
+    cb.addEventListener('change', syncEklerState);
   });
 }
 initEklerAutoSync();
 
-// Yazdırma anı: DOM zaten doğru, bu sadece son bir güvenlik kontrolüdür.
+// Yazdırma anı: sayfa sığdırma kararı SADECE burada, gerçek print CSS
+// devredeyken hesaplanır.
 window.addEventListener('beforeprint', syncPrintReadiness);
 if(window.matchMedia){
   const mq = window.matchMedia('print');
@@ -843,6 +1096,49 @@ if(window.matchMedia){
   if(mq.addEventListener) mq.addEventListener('change', handler);
   else if(mq.addListener) mq.addListener(handler);
 }
+
+/* --- QR Kod Oluşturucu ------------------------------------------------- */
+function initQRCode(){
+  if(typeof QRious === 'undefined') return;
+
+  document.querySelectorAll('.sheet').forEach(sheet => {
+    // Eski kaydedilmiş şablonlar için migration
+    let qrBox = sheet.querySelector('.qr-box');
+    if(!qrBox){
+      const heading = sheet.querySelector('.table-heading');
+      if(heading){
+        heading.insertAdjacentHTML('beforebegin', '<div class="qr-box" title="Öğrenci T.C. Kimlik No Barkodu" aria-hidden="true"><canvas></canvas></div>');
+        qrBox = sheet.querySelector('.qr-box');
+      }
+    }
+
+    const tcInput = sheet.querySelector('.idbox input.tc-no'); // tablodaki ilk tc-no öğrencinindir
+    if(!tcInput || !qrBox) return;
+
+    const canvas = qrBox.querySelector('canvas');
+    const qr = new QRious({
+      element: canvas,
+      level: 'M',
+      size: 150,
+      value: '0' // default boş
+    });
+
+    function updateQR(){
+      const val = tcInput.value.replace(/[^0-9]/g, '');
+      if(val.length === 11 && isValidTCNo(val)){
+        qr.value = val;
+        qrBox.classList.add('active');
+      } else {
+        qrBox.classList.remove('active');
+      }
+    }
+
+    tcInput.addEventListener('input', updateQR);
+    updateQR(); // Sayfa ilk açıldığında veya form temizlendiğinde durumu senkronize et
+  });
+}
+initQRCode();
+
 
 /* --- Formu temizle (madde 11: tarih yalnızca aktif formda yenilenir) ----- */
 function clearAll(){
@@ -852,39 +1148,120 @@ function clearAll(){
   active.querySelectorAll('input[type=checkbox], input[type=radio]').forEach(el=>el.checked=false);
   active.querySelectorAll('input.tc-no').forEach(el=>el.classList.remove('tc-invalid'));
   active.querySelectorAll('input.tel-no').forEach(el=>el.classList.remove('tel-invalid'));
+  active.querySelectorAll('input.date-invalid').forEach(el=>el.classList.remove('date-invalid'));
+  active.querySelectorAll('[aria-invalid]').forEach(el=>el.setAttribute('aria-invalid','false'));
   active.querySelectorAll('.dual-field input[type=text]').forEach(el=>autosizeDualField(el));
+  // Radyo grubu hafızasını da sıfırla (aksi halde "tekrar tıklayınca kaldır"
+  // davranışı temizlik sonrası bir tık şaşar).
+  active.querySelectorAll('.radio-row input[type=radio]').forEach(r=>oncekiSecim.delete(r.name));
+  
+  active.querySelectorAll('.qr-box').forEach(box=>box.classList.remove('active'));
+
   setTodayDate(active);
-  syncPrintReadiness();
+  syncEklerState();
 }
 
-/* --- Kaydet: tek başına çalışan HTML dosyası üretir --------------------- */
+/* --- Kaydet: tek başına çalışan, KİŞİSEL VERİ İÇERMEYEN HTML dosyası üretir
+   (KVKK). Bu buton bir "taslak/şablon dağıtım" aracıdır: veli/öğrenci
+   bilgileriyle dolu bir dosyanın başka bir okula ya da paylaşıma gitmesini
+   önlemek için, okul adı DIŞINDAKİ tüm alanlar (ad-soyad, TC no, telefon,
+   adres, tarih, işaretli kutular vb.) kaydedilen dosyada boş bırakılır.
+   Ekranda o an ne yazılı olursa olsun, üretilen dosya her zaman temiz bir
+   şablon olur. --------------------------------------------------------- */
 function saveAsFile(){
-  const liveTextInputs = Array.from(document.querySelectorAll('input[type=text]'));
-  const liveCheckable  = Array.from(document.querySelectorAll('input[type=checkbox], input[type=radio]'));
+  const schoolNameInput = document.getElementById('schoolNameInput');
+
+  // madde 1: .inline-blank alanları KİŞİSEL VERİ DEĞİL, YAPILANDIRMA verisidir
+  // (taşınma tarihi sınırı, kura başvuru dönemi). Bunlar yalnızca AYARLAR'dan
+  // üretim anında gömülür; kaydedilmiş dosya açıldığında buildAll() erken
+  // döndüğü için YENİDEN ÜRETİLMEZ. Boşaltılırlarsa geri dönüşsüz kaybolurlar.
+  // Klonlamadan ÖNCE canlı değerleri value niteliğine yazarak koruyoruz
+  // (cloneNode, kullanıcının yazdığı .value özelliğini kopyalamaz).
+  document.querySelectorAll('.inline-blank').forEach(el=>el.setAttribute('value', el.value));
 
   const clone = document.documentElement.cloneNode(true);
   const cloneTextInputs = clone.querySelectorAll('input[type=text]');
   const cloneCheckable  = clone.querySelectorAll('input[type=checkbox], input[type=radio]');
+  
+  const liveThemeSelector = document.getElementById('themeSelector');
+  const cloneThemeSelector = clone.querySelector('#themeSelector');
 
-  liveTextInputs.forEach((el, i)=>{ cloneTextInputs[i].setAttribute('value', el.value); });
-  liveCheckable.forEach((el, i)=>{
-    if(el.checked) cloneCheckable[i].setAttribute('checked','');
-    else cloneCheckable[i].removeAttribute('checked');
+  // Tema bilgisini kaydedilen dosyaya aktar
+  if (liveThemeSelector && cloneThemeSelector) {
+    const selectedIndex = liveThemeSelector.selectedIndex;
+    cloneThemeSelector.querySelectorAll('option').forEach((opt, idx) => {
+      if(idx === selectedIndex) opt.setAttribute('selected', 'selected');
+      else opt.removeAttribute('selected');
+    });
+  }
+
+  // Sadece okul adı ve yapılandırma alanları korunur; diğer TÜM metin alanları boşaltılır.
+  cloneTextInputs.forEach(el=>{
+    if(schoolNameInput && el.id === 'schoolNameInput'){
+      el.setAttribute('value', schoolNameInput.value);
+    } else if(el.classList.contains('inline-blank')){
+      /* yapılandırma verisi — yukarıda senkronlandı, dokunma */
+    } else {
+      el.setAttribute('value', '');
+    }
   });
+  // Tüm işaretli kutular (checkbox/radio) kaydedilen dosyada işaretsiz olur.
+  cloneCheckable.forEach(el=>el.removeAttribute('checked'));
 
   // madde 4: ölçüm span'ı dosyaya sızmasın
   clone.querySelectorAll('[data-measurer]').forEach(el=>el.remove());
+
+  // madde 4 (devamı): autosizeDualField() genişliği satır içi stil olarak yazar.
+  // Bu ölçü kullanıcının yazdığı ada göre oluştuğundan, alan boşaltılsa bile
+  // "donmuş" geniş bir kutu olarak dosyada kalır. Stili kaldırıyoruz; dosya
+  // açıldığında initDualFieldAutosize() placeholder'a göre yeniden ölçer.
+  clone.querySelectorAll('.dual-field input[type=text]').forEach(el=>el.removeAttribute('style'));
+
+  // Yazdırmaya-özel türetilmiş sınıflar dosyaya donuk şekilde kaydedilmesin;
+  // bunlar zaten dosya tekrar açılıp yazdırıldığında canlı olarak yeniden
+  // hesaplanır. Aksi halde ekran-bağlamında yanlış hesaplanmış bir
+  // 'sheet-compact' kalıcı hale gelip dosya her açıldığında sıkışık görünür.
+  clone.querySelectorAll('.sheet').forEach(s=>{
+    s.classList.remove('sheet-compact-1', 'sheet-compact-2', 'sheet-compact-3');
+  });
+  clone.querySelectorAll('.ekler').forEach(container=>{
+    container.classList.remove('ekler-empty', 'ekler-single');
+    const singleHolder = container.querySelector('.ek-single');
+    if(singleHolder) singleHolder.textContent = '';
+  });
+  clone.querySelectorAll('.ek-row').forEach(row=>row.classList.remove('print-show'));
+  // TC no / telefon / tarih geçersiz-vurgu sınıfları da (boş alanlarla anlamsız) temizlensin.
+  clone.querySelectorAll('.tc-invalid, .tel-invalid, .date-invalid').forEach(el=>el.classList.remove('tc-invalid','tel-invalid','date-invalid'));
+  clone.querySelectorAll('[aria-invalid]').forEach(el=>el.removeAttribute('aria-invalid'));
+
+  clone.querySelectorAll('.qr-box').forEach(box=>box.classList.remove('active'));
+  clone.querySelectorAll('.qr-box canvas').forEach(c => {
+    const newCanvas = document.createElement('canvas');
+    c.parentNode.replaceChild(newCanvas, c);
+  });
 
   const html = '<!DOCTYPE html>\n' + clone.outerHTML;
   const blob = new Blob([html], {type:'text/html;charset=utf-8'});
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'Matbu_Dilekceler.html';
+  // madde 15: dosya adına kaydetme tarihi VE saati eklenir — aynı gün içinde
+  // üretilen birden fazla taslak da birbirinin üzerine yazmaz, hangi tarih ve
+  // saatte üretildiği görünür.
+  const bugun = new Date();
+  const dosyaTarihi = String(bugun.getDate()).padStart(2,'0')
+                    + String(bugun.getMonth()+1).padStart(2,'0')
+                    + bugun.getFullYear()
+                    + String(bugun.getHours()).padStart(2,'0')
+                    + String(bugun.getMinutes()).padStart(2,'0');
+  a.download = 'Matbu_Dilekçeler_' + dosyaTarihi + '.html';
   document.body.appendChild(a);
   a.click();
   a.remove();
-  URL.revokeObjectURL(url);
+  // madde 2: indirme senkron başlamayabilir (Firefox/Safari). URL'yi hemen
+  // serbest bırakmak indirmeyi sessizce iptal ettirebilir; kısa bir gecikme
+  // güvenli tarafta kalmayı sağlar.
+  setTimeout(()=>URL.revokeObjectURL(url), 1000);
 }
 </script>
 
